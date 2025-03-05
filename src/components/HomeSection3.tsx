@@ -74,7 +74,7 @@ const HomeSection3 = () => {
               Excel, VBA.
             </li>
             <li>
-              <b>Others</b>UI/UX, Responsive Design, Trello, Figma, Lucid Charts, Canva, Google Sheets, Microsoft
+              <b>Others:</b> UI/UX, Responsive Design, Trello, Figma, Lucid Charts, Canva, Google Sheets, Microsoft
               Access.
             </li>
           </ul>

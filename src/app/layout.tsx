@@ -14,6 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="XLCrSDkihp0w244nSySE9heltmIvH7ZZxSB_pacxsOQ" />
+      </head>
       <body className="font-nunito font-semibold antialiased">{children}</body>
     </html>
   );

@@ -9,7 +9,7 @@ function Header() {
   // const [onProfile, setOnProfile] = useState(false);
   // const parentLinkStyling = "hover:bg-darkBlue2/90 font-bold text-lg whitespace-nowrap p-2 rounded-md";
   const childLinkStyling =
-    "hover:bg-white hover:text-darkBlue2 font-semibold text-lg transform duration-500 hover:scale-115 whitespace-nowrap w-full p-2 rounded hover:cursor-pointer";
+    "hover:bg-white text-center hover:text-darkBlue2 font-semibold text-lg transform duration-500 hover:scale-115 whitespace-nowrap w-full p-2 rounded hover:cursor-pointer";
 
   // const profileLinks = (
   //   <div className="absolute left-0 top-full bg-darkBlue2/90 rounded-md p-4 z-10">
@@ -28,7 +28,7 @@ function Header() {
   // );
 
   return (
-    <div className="flex flex-wrap lg:nowrap items-center lg:px-20 py-8 gap-y-5 gap-x-50">
+    <div className="flex flex-wrap lg:nowrap items-center justify-center lg:px-20 py-8 gap-y-5 gap-x-50">
       <div className="flex-shrink-0">
         <Image src="/alyeqeenLogo.png" alt="Al-Yeqeen Logo" width={200} height={200} className="object-cover" />
       </div>

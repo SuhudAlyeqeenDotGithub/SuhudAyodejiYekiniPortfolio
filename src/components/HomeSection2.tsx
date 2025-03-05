@@ -28,9 +28,9 @@ const HomeSection2 = () => {
   );
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-10 bg-blue-800 border-t-5 py-15 px-5 text-white">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-10 bg-blue-800 border-t-5 py-15 px-10 text-white">
       {/* left div */}
-      <div className="w-full pl-10 font-semibold text-xl flex flex-col py-20">
+      <div className="w-full  font-semibold text-xl flex flex-col py-20">
         <h1 id="aboutme" className="mt-24 mb-10 font-extrabold text-[40px] text-center">
           About Me
         </h1>
