@@ -36,17 +36,6 @@ function Accordion() {
     "I'm currently exploring AI integration with OpenAI’s API using Next.js, focusing on implementing chatbots and AI-driven features in my applications. Additionally, I have worked with various tools and libraries such as Chart.js for data visualization, React packages for UI optimization, and custom fonts to enhance design and readability."
   ];
 
-  const mobileWorldStationGitHub = (
-    <a
-      href="https://github.com/SuhudAlyeqeenDotGithub/Vanilla-Javascript-Practice-MobileWorldStationWebsite"
-      title="Mobile World Station"
-      className="font-extrabold bg-darkBlue1/10 rounded-md p-1 hover:bg-darkBlue1/15"
-      target="_blank"
-    >
-      MobileWorldStationGitHub
-    </a>
-  );
-
   const titleStyle = "font-extrabold text-lg flex items-center justify-between w-full gap-5";
   const descriptionStyle = "flex items-center font-semibold w-full mt-2";
 
