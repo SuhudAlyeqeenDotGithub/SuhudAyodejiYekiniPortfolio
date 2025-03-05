@@ -60,7 +60,9 @@ const HomeSection3 = () => {
     <div className="bg-blue-800 text-white font-bold flex flex-wrap md:flex-col p-5 md:p-20 border-t-5 justify-between gap-10">
       <div className="flex flex-wrap md:flex-nowrap justify-between gap-10">
         <div className={divCardStyle}>
-          <h1 className="font-extrabold text-[30px] mb-5 text-center">Skills</h1>
+          <h1 id="skills" className="font-extrabold text-[30px] mb-5 text-center">
+            Skills
+          </h1>
           <ul className="list-disc list-inside flex flex-col gap-5">
             <li>
               <b>Development:</b> JavaScript, Node.js, React.js, Next.js, TypeScript, Express.js, HTML, CSS, Redux, Git,
@@ -78,7 +80,9 @@ const HomeSection3 = () => {
           </ul>
         </div>
         <div className={divCardStyle}>
-          <h1 className="font-extrabold text-[30px] text-center mb-5">Education</h1>
+          <h1 id="education" className="font-extrabold text-[30px] text-center mb-5 text">
+            Education
+          </h1>
           <ul className="list-disc list-inside flex flex-col gap-5">
             <li>BTEC Level 3 National Extended Diploma in Information Technology (Grade **D) - Sep 2022 - Jul 2024 </li>
             <li>GCSE Mathematic (Grade: 5) - Aug 2022</li>
@@ -88,7 +92,7 @@ const HomeSection3 = () => {
       </div>
 
       <div className="w-full flex flex-col gap-10 text-lg items-center mt-10">
-        <h1 id="workexperience" className="font-extrabold text-[40px]">
+        <h1 id="workexperience" className="font-extrabold text-[40px] text-center">
           Work Experience
         </h1>
         <div className="flex flex-wrap gap-5 items-center justify-center">
