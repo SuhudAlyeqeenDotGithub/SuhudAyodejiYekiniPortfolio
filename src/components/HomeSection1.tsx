@@ -15,7 +15,7 @@ function HomeSection1() {
         {/* right section */}
         <div className="flex flex-col gap-2 justify-center items-center lg:items-start">
           <div>
-            <p className="text-[#ABB009] text-[50px] font-bold">Hi I'm</p>
+            <p className="text-[#ABB009] text-[50px] font-bold">Hi I&apos;m</p>
             <p className="text-[90px] font-khula l"> Suhud Ayodeji</p>
             <p className="text-[90px] font-khula l">Yekini</p>
             <p className="text-[20px] mb-20"> Data System Developer || Data Analyst || Aspiring Full Stack Developer</p>

@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { useEffect } from "react";
 
 const HomeSection3 = () => {
   const [activeButton, setActiveButton] = useState("Software Projects");
@@ -47,10 +46,10 @@ const HomeSection3 = () => {
       </li>
       <li>
         Designed and implemented a JavaScript Apps Script algorithm in 2 hours to rapidly retrieve folder and file
-        ownership data from the company’s Google Drive, saving 4 days of manual retrieval.
+        ownership data from the company&apos;s Google Drive, saving 4 days of manual retrieval.
       </li>
       <li>
-        Contributed to overseeing data and content management within the company’s new CMS (PCS) using Firefoo,
+        Contributed to overseeing data and content management within the company&apos;s new CMS (PCS) using Firefoo,
         enhancing client relationships and improving manager collaboration by 86%.
       </li>
     </ul>

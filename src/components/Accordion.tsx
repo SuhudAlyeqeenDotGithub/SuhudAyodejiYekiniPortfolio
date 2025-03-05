@@ -5,17 +5,6 @@ import AccordionItem from "./AccordionItem";
 function Accordion() {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  interface AccordionProps {
-    title: string;
-    content: string;
-    titleStyle: string;
-    contentStyle: string;
-    isOpen: boolean;
-    onToggle: () => void;
-    borderBottom: string;
-    borderLeft: string;
-  }
-
   const handleToggle = (index: number): void => {
     setOpenIndex((openIndex) => (openIndex === index ? null : index));
   };
