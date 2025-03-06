@@ -65,7 +65,7 @@ const HomeSection2 = () => {
         </div>
       </div>
       {/* right div */}
-      <div className="flex flex-col gap-y-10 bg-white/90 text-blue-900 justify-center items-center p-8 rounded-2xl md:w-1/2">
+      <div className="flex flex-col gap-y-10 bg-white text-blue-900 justify-center items-center p-8 rounded-2xl md:w-1/2">
         {/* top div */}
         <div className="flex justify-center items-center gap-6">
           <button

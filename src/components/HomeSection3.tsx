@@ -9,7 +9,11 @@ const HomeSection3 = () => {
   const divCardStyle = "bg-white text-blue-900 p-8 rounded-md w-full transform duration-300 hover:scale-105";
 
   const taskTracker = (
-    <a href="https://alyeqeentasktracker.onrender.com" target="_blank" className="bg-white/9 p-1 rounded-md font-bold">
+    <a
+      href="https://github.com/SuhudAlyeqeenDotGithub/Al-Yeqeen-Task-Tracker-App"
+      target="_blank"
+      className="bg-white/9 p-1 rounded-md font-bold"
+    >
       Al-Yeqeen Task Tracker
     </a>
   );
@@ -21,9 +25,9 @@ const HomeSection3 = () => {
         Express.js, MongoDB, Redux etc., to ensure scalability, efficiency, and a seamless user experience.
       </li>
       <li>
-        Spearheaded the design and development of the Al-Yeqeen Website, establishing a centralized platform to showcase
-        my work and applications, leveraging Next.js and TypeScript to enhance performance, scalability, and
-        maintainability, resulting in an 80% increase in online presence and engagement.
+        Spearheaded the design and development of this website, establishing a centralized platform to showcase my work
+        and applications, leveraging Next.js and TypeScript to enhance performance, scalability, and maintainability,
+        resulting in an 80% increase in online presence and engagement.
       </li>
     </ul>
   );
