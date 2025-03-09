@@ -53,7 +53,7 @@ function HomeSection1() {
               className="rounded-full bottom-6 max-w-full max-h-full object-cover saturate-99 contrast-95 brightness-100"
             />
           </div>
-          <div className="flex flex-col items-center justify-center w-1/2">
+          <div className="flex flex-col items-center justify-center md:w-1/2">
             <div className="flex gap-5 p-4 font-bold w-full">
               <button
                 type="button"

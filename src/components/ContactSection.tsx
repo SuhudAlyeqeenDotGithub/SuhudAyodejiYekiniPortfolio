@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaGithub, FaWhatsapp, FaLinkedinIn } from "react-icons/fa";
 
 const ContactSection = () => {
@@ -10,11 +10,43 @@ const ContactSection = () => {
   }
   const [formData, setFormData] = useState<FormData>({ name: "", senderEmail: "", message: "" });
   const { name, senderEmail, message } = formData;
+  const textAreaInput = useRef<HTMLTextAreaElement>(null);
+  const [responseFromBackEnd, setResponseFromBackEnd] = useState("");
+  const [loading, setLoading] = useState(false);
 
+  const handleTextAreaInput = () => {
+    if (textAreaInput.current) {
+      const textArea = textAreaInput.current;
+      textArea.style.height = "auto";
+      textArea.style.height = textArea.scrollHeight + "px";
+    }
+  };
   const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev: FormData) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-  const inputStyling = "text-blue-900 placeholder-blue-900 rounded bg-white p-4 w-full outline-hidden";
+  const inputStyling = "text-blue-900 placeholder-blue-500 text-lg rounded bg-white p-4 w-full outline-hidden";
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+      const response = await fetch("/api/contactsuhudayodejiyekini", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.status === 200) {
+        const responseData = await response.json();
+        setLoading(false);
+        setResponseFromBackEnd(responseData.message);
+        setFormData({ name: "", senderEmail: "", message: "" });
+      }
+    } catch (error) {
+      console.error("Error sending email:", error);
+    }
+  };
 
   return (
     <div className="bg-blue-800 text-white font-bold flex flex-wrap md:flex-col p-5 md:p-20 justify-between">
@@ -23,7 +55,7 @@ const ContactSection = () => {
           <h1 id="contactme" className="font-extrabold text-[40px] text-center mb-10">
             Contact Me
           </h1>
-          <form className="w-full md:w-1/2 flex flex-col gap-3 items-center justify-center">
+          <form className="w-full md:w-1/2 flex flex-col gap-3" onSubmit={handleSubmit}>
             <input
               className={inputStyling}
               placeholder="Name"
@@ -35,25 +67,47 @@ const ContactSection = () => {
             <input
               className={inputStyling}
               placeholder="Email *"
-              type="text"
+              type="email"
               name={"senderEmail"}
               value={senderEmail}
               onChange={handleInput}
             />
+            <div className="ml-3">
+              {senderEmail === "" || !senderEmail.includes("@") || senderEmail.length < 2
+                ? "Please enter a valid email"
+                : ""}
+            </div>
             <textarea
-              className={inputStyling}
+              onInput={handleTextAreaInput}
+              ref={textAreaInput}
+              className={`${inputStyling} overflow-hidden`}
+              rows={4}
               placeholder="Message *"
               name={"message"}
               value={message}
               onChange={handleInput}
             />
-            <button
-              type="submit"
-              className="border-3 font-extrabold text-lg mt-5 rounded transform duration-100 w-1/3 p-4 hover:scale-105"
-              title="Submit"
-            >
-              Submit
-            </button>
+            <div className="ml-3">{message === "" ? "Please enter a message" : ""}</div>
+            <div className="flex flex-col items-center justify-center">
+               <div className="ml-3 text-xl text-center">{responseFromBackEnd}</div>
+            {loading && (
+              <div className="flex flex-row gap-2 text-lg">
+                <div>Sending Email...</div>
+                <div className="w-6 h-6 border-4 border-gray-300 border-t-blue-600 rounded-full animate-spin"></div>
+              </div>
+            )}
+            </div>
+           
+            <div className="flex justify-center">
+              <button
+                type="submit"
+                disabled={!senderEmail || !message}
+                className="disabled:bg-red-500/90 disabled:cursor-not-allowed border-3 font-extrabold text-lg mt-5 rounded-md transform duration-100 w-1/3 p-4 hover:scale-105"
+                title="Submit"
+              >
+                Submit
+              </button>
+            </div>
           </form>
         </div>
         <div className="w-full flex flex-col items-center justify-center">
