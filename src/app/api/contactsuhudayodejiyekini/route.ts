@@ -47,19 +47,3 @@ export async function POST(req: NextRequest) {
     return new Response("Email not sent", { status: 500 });
   }
 }
-
-export async function GET(req: NextRequest) {
-  try {
-    // Respond with a simple message to confirm the endpoint is working
-    return new Response(JSON.stringify({ message: "API is working" }), {
-      status: 200,
-      headers: { "Content-Type": "application/json" }
-    });
-  } catch (error) {
-    // Log the error for debugging purposes
-    console.error("Error handling GET request:", error);
-
-    // Return an error response
-    return new Response("Error processing GET request", { status: 500 });
-  }
-}
