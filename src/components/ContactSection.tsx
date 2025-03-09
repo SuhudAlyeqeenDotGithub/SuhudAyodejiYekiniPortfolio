@@ -42,6 +42,9 @@ const ContactSection = () => {
         setLoading(false);
         setResponseFromBackEnd(responseData.message);
         setFormData({ name: "", senderEmail: "", message: "" });
+      } else {
+        setLoading(false);
+        setResponseFromBackEnd("Error sending email. Please try again later");
       }
     } catch (error) {
       console.error("Error sending email:", error);
@@ -89,15 +92,15 @@ const ContactSection = () => {
             />
             <div className="ml-3">{message === "" ? "Please enter a message" : ""}</div>
             <div className="flex flex-col items-center justify-center">
-               <div className="ml-3 text-xl text-center">{responseFromBackEnd}</div>
-            {loading && (
-              <div className="flex flex-row gap-2 text-lg">
-                <div>Sending Email...</div>
-                <div className="w-6 h-6 border-4 border-gray-300 border-t-blue-600 rounded-full animate-spin"></div>
-              </div>
-            )}
+              <div className="ml-3 text-xl text-center">{responseFromBackEnd}</div>
+              {loading && (
+                <div className="flex flex-row gap-2 text-lg">
+                  <div>Sending Email...</div>
+                  <div className="w-6 h-6 border-4 border-gray-300 border-t-blue-600 rounded-full animate-spin"></div>
+                </div>
+              )}
             </div>
-           
+
             <div className="flex justify-center">
               <button
                 type="submit"
