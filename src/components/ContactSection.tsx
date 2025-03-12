@@ -52,7 +52,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="bg-blue-800 text-white font-bold flex flex-wrap md:flex-col p-5 md:p-20 justify-between">
+    <div className="text-white font-bold flex flex-wrap md:flex-col p-5 md:p-20 justify-between">
       <div className="flex flex-col md:gap-20 mt-20">
         <div className="w-full flex flex-col justify-center items-center">
           <h1 id="contactme" className="font-extrabold text-[40px] text-center mb-10">

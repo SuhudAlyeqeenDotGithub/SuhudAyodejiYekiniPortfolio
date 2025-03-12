@@ -61,7 +61,7 @@ const HomeSection3 = () => {
 
   const contentToDisplay = activeButton === "Software Projects" ? softwareProjects : dataExcecutiveProjects;
   return (
-    <div className="bg-blue-800 text-white font-bold flex flex-wrap md:flex-col p-5 md:p-20 border-t-5 justify-between gap-10">
+    <div className="text-white font-bold flex flex-wrap md:flex-col p-5 md:p-20 mt-10  justify-between gap-10">
       <div className="flex flex-wrap md:flex-nowrap justify-between gap-10">
         <div className={divCardStyle}>
           <h1 id="skills" className="font-extrabold text-[30px] mb-5 text-center">
@@ -111,6 +111,14 @@ const HomeSection3 = () => {
               {role}
             </button>
           ))}
+          <button
+            className={buttonStyling}
+            onClick={() => {
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Projects
+          </button>
         </div>
         <div className="p-4">{contentToDisplay}</div>
       </div>

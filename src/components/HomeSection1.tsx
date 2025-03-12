@@ -9,7 +9,7 @@ function HomeSection1() {
     "bg-white p-4 text-blue-900 text-lg font-extrabold rounded-md transform duration-200 hover:scale-110 w-full";
 
   return (
-    <div className="bg-blue-800 py-5 px-40  text-white">
+    <div className="py-5 px-40 text-white">
       <Header />
       <div className="flex flex-col md:flex-row items-center gap-10 justify-between mt-15 lg:mt-0">
         {/* right section */}
@@ -22,13 +22,16 @@ function HomeSection1() {
           </div>
 
           <div className="flex flex-wrap md:flex-nowrap mb-10 md:m-0 gap-5 items-center justify-center w-full">
-            {/* <button
+            <button
               type="button"
               title="Al-Yeqeen Apps"
               className="border-3 p-4 text-[18px] mt-10 w-full rounded-md transform duration-200 hover:scale-110 font-bold"
+              onClick={() => {
+                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
-              Al-Yeqeen Apps
-            </button> */}
+              Projects
+            </button>
             <button
               type="button"
               title="Al-Yeqeen Apps"

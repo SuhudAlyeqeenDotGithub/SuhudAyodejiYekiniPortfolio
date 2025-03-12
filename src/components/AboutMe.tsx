@@ -27,8 +27,13 @@ const HomeSection2 = () => {
     </a>
   );
 
+  const resume = (
+    <div className="w-full h-full">
+      <iframe src="/suhudayodejiyekinicv.pdf" width="100%" height="900px"></iframe>
+    </div>
+  );
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-10 bg-blue-800 border-t-5 py-15 px-10 text-white">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-10 py-15 mt-10  px-10 text-white">
       {/* left div */}
       <div className="w-full  font-semibold text-xl flex flex-col py-20">
         <h1 id="aboutme" className="mt-24 mb-10 font-extrabold text-[40px] text-center">
@@ -65,9 +70,9 @@ const HomeSection2 = () => {
         </div>
       </div>
       {/* right div */}
-      <div className="flex flex-col gap-y-10 bg-white text-blue-900 justify-center items-center p-8 rounded-2xl md:w-1/2">
+      <div className="flex flex-col gap-y-10 bg-white text-blue-900 justify-center items-center p-8 rounded-2xl md:w-1/2 min-h-[600px]">
         {/* top div */}
-        <div className="flex justify-center items-center gap-6">
+        <div id="devjourney" className="flex justify-center items-center gap-6">
           <button
             type="button"
             title="Development Journey"
@@ -76,17 +81,17 @@ const HomeSection2 = () => {
           >
             Development Journey
           </button>
-          {/* <button
+          <button
             type="button"
             title="Skills & Technology"
             className={`${buttonStyling} ${!devJournyIsActive ? "bg-blue-900 text-white" : ""}`}
             onClick={() => setDevJournyIsActive(!devJournyIsActive)}
           >
-            Skills & Technology
-          </button> */}
+            CV / Resume
+          </button>
         </div>
 
-        <Accordion />
+        {devJournyIsActive ? <Accordion /> : resume}
       </div>
     </div>
   );

@@ -68,20 +68,36 @@ function Header() {
           <li
             className={childLinkStyling}
             onClick={() => {
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Projects
+          </li>
+          <li
+            className={childLinkStyling}
+            onClick={() => {
+              document.getElementById("devjourney")?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Resume / CV
+          </li>
+          <li
+            className={childLinkStyling}
+            onClick={() => {
               document.getElementById("education")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             Education
           </li>
 
-          <li
+          {/* <li
             className={childLinkStyling}
             onClick={() => {
               document.getElementById("aboutme")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
             About Me
-          </li>
+          </li> */}
         </ul>
       </nav>
       {/* <div className="flex items-center gap-1">
