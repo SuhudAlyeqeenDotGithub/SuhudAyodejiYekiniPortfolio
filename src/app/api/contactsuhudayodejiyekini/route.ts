@@ -31,7 +31,7 @@ export async function POST(req: NextRequest) {
       from: senderEmail,
       to: process.env.EMAIL, // The email you want to receive the message at
       subject: `Suhud Al-Yeqeen App Message from ${name}`,
-      text: `Hi Suhud. Please see the below message from ${name}: \n\n${message}`
+      text: `Hi Suhud. Please see the below message from ${name} || ${senderEmail}: \n\n${message}`
     };
 
     // Send the email
