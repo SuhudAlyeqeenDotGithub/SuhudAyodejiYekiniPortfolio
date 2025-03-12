@@ -52,8 +52,8 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="text-white font-bold flex flex-wrap md:flex-col p-5 md:p-20 justify-between">
-      <div className="flex flex-col md:gap-20 mt-20">
+    <div className="text-white font-bold p-5 md:p-20 justify-between">
+      <div className="flex flex-col md:gap-20 mt-20 items-center justify-center">
         <div className="w-full flex flex-col justify-center items-center">
           <h1 id="contactme" className="font-extrabold text-[40px] text-center mb-10">
             Contact Me
@@ -119,13 +119,13 @@ const ContactSection = () => {
           </h1>
           <div className="w-full md:w-1/2 flex p-10 flex-row gap-5 justify-center items-center bg-white rounded h-1/3">
             <a href="https://github.com/SuhudAlyeqeenDotGithub?tab=repositories" target="_blank">
-              <FaGithub className="size-16 text-github  transform duration-200 hover:scale-110" />
+              <FaGithub className="size-16 text-github transform duration-200 hover:scale-110" />
             </a>
             <a href="https://wa.me/447840262030" target="_blank">
-              <FaWhatsapp className="size-16 text-whatsapp  transform duration-200 hover:scale-110" />
+              <FaWhatsapp className="size-16 text-whatsapp transform duration-200 hover:scale-110" />
             </a>
             <a href="https://www.linkedin.com/in/suhud-yekini-a78330234/" target="_blank">
-              <FaLinkedinIn className="size-16 text-linkedin  transform duration-200 hover:scale-110" />
+              <FaLinkedinIn className="size-16 text-linkedin transform duration-200 hover:scale-110" />
             </a>
           </div>
         </div>

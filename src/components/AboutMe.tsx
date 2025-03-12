@@ -29,6 +29,9 @@ const HomeSection2 = () => {
 
   const resume = (
     <div className="w-full h-full">
+      <a href="/suhudayodejiyekinicv.pdf" target="_blank" rel="noopener noreferrer" className="font-bold m-10">
+        Open on new tab
+      </a>
       <iframe src="/suhudayodejiyekinicv.pdf" width="100%" height="900px"></iframe>
     </div>
   );

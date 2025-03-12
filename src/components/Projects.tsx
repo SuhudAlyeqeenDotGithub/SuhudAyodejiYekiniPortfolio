@@ -9,7 +9,7 @@ const Projects = () => {
       imageSrc: "/alyeqeentasktrackerimage.png",
       pageLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
       gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/Al-Yeqeen-Task-Tracker-App",
-      techStack: ""
+      techStack: "JavaScript, React, TailwindCSS, Node.js, Express, MongoDB, Mongoose, Redux Toolkit"
     },
 
     {
@@ -19,7 +19,7 @@ const Projects = () => {
       imageSrc: "/portfolioimage.png",
       pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/",
       gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
-      techStack: ""
+      techStack: "JavaScript, React, Next.js, TailwindCSS, Node.js"
     }
   ];
   return (
@@ -27,7 +27,7 @@ const Projects = () => {
       <h1 id="projects" className="font-extrabold text-[40px] text-center mb-20">
         Projects
       </h1>
-      <div className="flex flex-row md:flex-wrap justify-center items-center gap-8 mt-20">
+      <div className="flex flex-wrap md:flex-nowrap justify-center items-center gap-8 mt-20">
         {projectsDetails.map(({ title, description, imageSrc, pageLink, gitHubLink, techStack }) => (
           <ProjectCard
             key={title}
