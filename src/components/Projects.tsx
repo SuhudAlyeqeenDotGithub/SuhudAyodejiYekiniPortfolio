@@ -87,7 +87,7 @@ const Projects = () => {
   return (
     <div className="flex flex-col justify-center pt-30 pb-10 px-10 gap-20 items-center bg-[#b7dbd2]">
       <div id="projects" className="text-white flex flex-wrap gap-10 justify-center items-center">
-        {projectsDetails.map(({ title, description, imageSrc, pageLink, gitHubLink, techStack, compStatus }) => (
+        {projectsDetails.map(({ title, description, pageLink, gitHubLink, techStack, compStatus }) => (
           <ProjectCard
             key={title}
             title={title}
