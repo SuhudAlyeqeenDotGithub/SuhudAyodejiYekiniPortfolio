@@ -5,7 +5,6 @@ import { FaGithub } from "react-icons/fa";
 interface ProjectCardProps {
   title: string;
   description: string;
-  imageSrc: string;
   pageLink: string;
   gitHubLink: string;
   techStack: React.ReactNode;
@@ -15,7 +14,6 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({
   title,
   description,
-  imageSrc,
   pageLink,
   gitHubLink,
   techStack,

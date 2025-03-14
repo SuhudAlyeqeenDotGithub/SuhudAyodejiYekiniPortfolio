@@ -19,8 +19,7 @@ const AccordionItem: React.FC<ComponentProps> = ({
   contentStyle,
   isOpen,
   onToggle,
-  borderBottom,
-  borderLeft
+  borderBottom
 }) => {
   const defaultTitleStyle = "p-4";
   const defaultContentStyle = "p-4";

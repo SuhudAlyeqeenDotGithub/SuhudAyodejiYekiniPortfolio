@@ -92,7 +92,6 @@ const Projects = () => {
             key={title}
             title={title}
             description={description}
-            imageSrc={imageSrc}
             pageLink={pageLink}
             gitHubLink={gitHubLink}
             techStack={techStack}
