@@ -108,7 +108,7 @@ const Projects = () => {
             document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          Let's Collaborate
+          Let&apos;s Collaborate
         </button>
         <button
           className="whitespace-nowrap shadow-m text-white bg-darkBlue3 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue1/90 "

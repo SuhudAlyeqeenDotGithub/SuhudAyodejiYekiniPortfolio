@@ -1,8 +1,5 @@
 import Header from "@/components/Header";
 import Image from "next/image";
-import { FaGithub } from "react-icons/fa";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
 
 function HomeSection1() {
   return (
@@ -15,7 +12,10 @@ function HomeSection1() {
             <p className="text-amber-400 md:text-[50px] text-[30px] font-bold">Hi I&apos;m</p>
             <p className="md:text-[90px] text-[60px] font-khula"> Suhud Ayodeji</p>
             <p className="md:text-[90px] text-[60px] font-khula">Yekini</p>
-            <p className="md:text-[20px] text-[15px]"> Data System Developer || Data Analyst || Aspiring Full Stack Developer</p>
+            <p className="md:text-[20px] text-[15px]">
+              {" "}
+              Data System Developer || Data Analyst || Aspiring Full Stack Developer
+            </p>
           </div>
 
           <div className="flex flex-wrap md:flex-nowrap gap-5 mt-10 items-center justify-center w-full">
