@@ -101,9 +101,9 @@ const Projects = () => {
         ))}
       </div>
 
-      <div className="flex gap-5 items-center justify-center w-full">
+      <div className="flex flex-wrap gap-5 items-center justify-center w-full">
         <button
-          className="border-2 border-darkBlue2 text-darkBlue2 shadow-m w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-[#a8cec4]"
+          className="whitespace-nowrap border-2 border-darkBlue2 text-darkBlue2 shadow-m w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-[#a8cec4]"
           onClick={() => {
             document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
           }}
@@ -111,7 +111,7 @@ const Projects = () => {
           Let's Collaborate
         </button>
         <button
-          className="shadow-m text-white bg-darkBlue3 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue1/90 "
+          className="whitespace-nowrap shadow-m text-white bg-darkBlue3 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue1/90 "
           onClick={() => {
             document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
           }}

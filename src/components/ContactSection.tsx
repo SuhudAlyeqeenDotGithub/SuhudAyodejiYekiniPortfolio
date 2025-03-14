@@ -25,7 +25,7 @@ const ContactSection = () => {
     setFormData((prev: FormData) => ({ ...prev, [e.target.name]: e.target.value }));
   };
   const inputStyling =
-    "text-blue-900 placeholder-[#425559] text-lg rounded bg-white p-4 w-full outline-hidden focus:border-2 border-amber-500";
+    "text-darkBlue2 placeholder-[#425559] text-lg rounded bg-white p-4 w-full outline-hidden focus:border-2 border-amber-500";
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
@@ -54,7 +54,7 @@ const ContactSection = () => {
 
   return (
     <div className="text-white font-bold p-5 md:p-20 justify-between">
-      <div className="flex flex-col md:gap-20 mt-20 items-center justify-center">
+      <div className="flex flex-col gap-10 md:gap-20 mt-20 items-center justify-center">
         <div className="w-full flex flex-col justify-center items-center">
           <h1 id="contactme" className="font-extrabold text-[40px] text-center mb-10">
             Contact Me
@@ -97,7 +97,7 @@ const ContactSection = () => {
               {loading && (
                 <div className="flex flex-row gap-2 text-lg">
                   <div>Sending Email...</div>
-                  <div className="w-6 h-6 border-4 border-gray-300 border-t-blue-600 rounded-full animate-spin"></div>
+                  <div className="w-6 h-6 border-4 border-amber-500 border-t-white rounded-full animate-spin"></div>
                 </div>
               )}
             </div>
@@ -106,7 +106,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={!senderEmail || !message}
-                className="disabled:bg-red-500/90 bg-amber-600 disabled:cursor-not-allowed font-extrabold text-lg mt-5 rounded-md transform duration-100 w-1/3 p-4 hover:scale-105"
+                className="disabled:bg-red-500/ whitespace-nowrap bg-amber-600 disabled:cursor-not-allowed font-extrabold text-lg mt-5 rounded-md transform duration-100 md:w-1/3 p-4 hover:scale-105"
                 title="Submit"
               >
                 {senderEmail && message ? "Submit" : "Fill in the form Please"}

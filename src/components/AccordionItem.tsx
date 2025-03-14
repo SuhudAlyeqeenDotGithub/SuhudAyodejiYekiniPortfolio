@@ -26,10 +26,10 @@ const AccordionItem: React.FC<ComponentProps> = ({
   const defaultContentStyle = "p-4";
 
   return (
-    <div className={`px-10 cursor-pointer rounded`} onClick={onToggle}>
+    <div className={`px-1 cursor-pointer rounded`} onClick={onToggle}>
       <div
         className={`${borderBottom} flex flex-col
-       py-3 duration-100 hover:scale-103`}
+       py-2 duration-100 hover:scale-103`}
       >
         <h1 className={titleStyle ? titleStyle : defaultTitleStyle}>
           {title}

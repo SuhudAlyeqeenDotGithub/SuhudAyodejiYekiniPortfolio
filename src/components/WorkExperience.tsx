@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const HomeSection3 = () => {
   const [activeButton, setActiveButton] = useState("Software Projects");
-  const buttonStyling = `shadow-md border-2 border-gray-500 p-4 text-darkBlue2 rounded-md font-bold transform duration-300 hover:scale-110`;
+  const buttonStyling = `shadow-md border-2 border-darkBlue2 p-4 text-darkBlue2 rounded-md font-bold transform duration-300 hover:scale-110`;
   const activeBtnSyling = "bg-[#425559] text-white border-none";
   const jobRoles = ["Software Projects", "Data Excecutive & Systems Developer"];
   const divCardStyle = "bg-white/95 text-darkBlue2 p-8 rounded-md w-full transform duration-300 hover:scale-105";
@@ -97,9 +97,9 @@ const HomeSection3 = () => {
             </ul>
           </div>
         </div>
-        <div className="flex gap-5 items-center justify-center w-full">
+        <div className="flex flex-wrap gap-5 items-center justify-center w-full">
           <button
-            className="shadow-m bg-amber-500 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-yellow-600"
+            className="whitespace-nowrap shadow-m bg-amber-500 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-yellow-600"
             onClick={() => {
               document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
             }}
@@ -107,7 +107,7 @@ const HomeSection3 = () => {
             Al-Yeqeen Apps
           </button>
           <button
-            className="shadow-m text-white bg-darkBlue2 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue1/90 "
+            className="whitespace-nowrap hadow-m text-white bg-darkBlue2 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue1/90 "
             onClick={() => {
               document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
             }}

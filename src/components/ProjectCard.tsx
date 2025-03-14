@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
     "whitespace-nowrap p-4 font-bold rounded-md transform bg-darkBlue3 text-white duration-200 hover:cursor-pointer hover:scale-105";
 
   return (
-    <div className="w-[500px] h-[900px] shadow-md rounded-lg border border-[#98beb5] bg-white/90 text-darkBlue3 font-semibold transform duration-200 hover:scale-103">
+    <div className="md:w-[500px] md:h-[900px] shadow-md rounded-lg border border-[#98beb5] bg-white/90 text-darkBlue3 font-semibold transform duration-200 hover:scale-103">
       <div className="p-4 flex flex-col gap-10 bg-center bg-cover">
         <div className="p-4 flex flex-col gap-10 rounded-md">
           <div className="flex flex-col gap-5">

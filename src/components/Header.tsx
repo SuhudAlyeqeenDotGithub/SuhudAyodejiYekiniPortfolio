@@ -9,7 +9,7 @@ function Header() {
   // const [onProfile, setOnProfile] = useState(false);
   // const parentLinkStyling = "hover:bg-darkBlue2/90 font-bold text-lg whitespace-nowrap p-2 rounded-md";
   const childLinkStyling =
-    "hover:bg-amber-500/90 font-bold text-lg whitespace-nowrap w-full p-2 rounded hover:cursor-pointer";
+    "hover:bg-amber-500/90 font-bold md:text-[18px] text-[15px] whitespace-nowrap text-center p-2 rounded hover:cursor-pointer";
 
   // const profileLinks = (
   //   <div className="absolute left-0 top-full bg-darkBlue2/90 rounded-md p-4 z-10">
@@ -28,11 +28,11 @@ function Header() {
   // );
 
   return (
-    <div className="flex flex-col sm:flex-wrap items-center justify-between py-8 g-red-500 gap-y-5">
-      <div className="flex-shrink-0 g-yellow-500">
+    <div className="flex flex-col sm:flex-wrap items-center justify-between md:py-8 pt-5 gap-y-5">
+      <div className="flex-shrink-0 g-yellow-500 hidden sm:block">
         <Image src="/alyeqeenLogo.png" alt="Al-Yeqeen Logo" width={200} height={200} className="object-cover" />
       </div>
-      <nav className="h-[50px]">
+      <nav className="flex items-center justify-center gap-5">
         {/* <ul className="flex flex-wrap md:flex-nowrap gap-5">
           <div
             className={`relative ${parentLinkStyling}`}
@@ -48,8 +48,7 @@ function Header() {
 
           <li>Al-Yeqeen Apps</li>
         </ul> */}
-        <ul className="flex flex-wrap md:flex-nowrap gap-5">
-          {" "}
+        <ul className="flex flex-wrap md:flex-nowrap md:gap-5 items-center justify-center md:justify-between">
           <li
             className={childLinkStyling}
             onClick={() => {
