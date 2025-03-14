@@ -24,7 +24,8 @@ const ContactSection = () => {
   const handleInput = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData((prev: FormData) => ({ ...prev, [e.target.name]: e.target.value }));
   };
-  const inputStyling = "text-blue-900 placeholder-blue-500 text-lg rounded bg-white p-4 w-full outline-hidden";
+  const inputStyling =
+    "text-blue-900 placeholder-[#425559] text-lg rounded bg-white p-4 w-full outline-hidden focus:border-2 border-amber-500";
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
@@ -105,27 +106,27 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={!senderEmail || !message}
-                className="disabled:bg-red-500/90 disabled:cursor-not-allowed border-3 font-extrabold text-lg mt-5 rounded-md transform duration-100 w-1/3 p-4 hover:scale-105"
+                className="disabled:bg-red-500/90 bg-amber-600 disabled:cursor-not-allowed font-extrabold text-lg mt-5 rounded-md transform duration-100 w-1/3 p-4 hover:scale-105"
                 title="Submit"
               >
-                Submit
+                {senderEmail && message ? "Submit" : "Fill in the form Please"}
               </button>
             </div>
           </form>
         </div>
-        <div className="w-full flex flex-col items-center justify-center">
+        <div className="w-full flex flex-col items-center justify-center bg-darkBlue3/60 border-t-3 border-amber-500 py-8">
           <h1 id="contactme" className="font-extrabold text-[40px] text-center mb-10">
             Click Me
           </h1>
-          <div className="w-full md:w-1/2 flex p-10 flex-row gap-5 justify-center items-center bg-white rounded h-1/3">
+          <div className="w-full md:w-1/3 flex p-10 flex-row gap-5 justify-center items-center bg-white rounded transform duration-200 hover:scale-110 h-1/3">
             <a href="https://github.com/SuhudAlyeqeenDotGithub?tab=repositories" target="_blank">
-              <FaGithub className="size-16 text-github transform duration-200 hover:scale-110" />
+              <FaGithub className="size-14 text-github transform duration-200 hover:scale-110" />
             </a>
             <a href="https://wa.me/447840262030" target="_blank">
-              <FaWhatsapp className="size-16 text-whatsapp transform duration-200 hover:scale-110" />
+              <FaWhatsapp className="size-14 text-whatsapp transform duration-200 hover:scale-110" />
             </a>
             <a href="https://www.linkedin.com/in/suhud-yekini-a78330234/" target="_blank">
-              <FaLinkedinIn className="size-16 text-linkedin transform duration-200 hover:scale-110" />
+              <FaLinkedinIn className="size-14 text-linkedin transform duration-200 hover:scale-110" />
             </a>
           </div>
         </div>

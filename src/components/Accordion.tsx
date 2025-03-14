@@ -36,7 +36,7 @@ function Accordion() {
     "I'm currently exploring AI integration with OpenAI’s API using Next.js, focusing on implementing chatbots and AI-driven features in my applications. Additionally, I have worked with various tools and libraries such as Chart.js for data visualization, React packages for UI optimization, and custom fonts to enhance design and readability."
   ];
 
-  const titleStyle = "font-extrabold text-lg flex items-center justify-between w-full gap-5";
+  const titleStyle = "font-bold text-lg flex items-center justify-between w-full gap-5 bg-darkBlue3 rounded text-white p-2";
   const descriptionStyle = "flex items-center font-semibold w-full mt-2";
 
   return (
@@ -53,8 +53,8 @@ function Accordion() {
             onToggle={() => {
               handleToggle(index);
             }}
-            borderBottom="border-b-2"
-            borderLeft="border-l-4"
+            borderBottom=""
+            borderLeft=""
           />
         ))}
       </AccordionContainer>

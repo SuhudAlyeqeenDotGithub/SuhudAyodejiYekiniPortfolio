@@ -3,13 +3,13 @@ import { useState } from "react";
 import Accordion from "./Accordion";
 
 const HomeSection2 = () => {
-  const [devJournyIsActive, setDevJournyIsActive] = useState(false);
-  const buttonStyling = `border-2 shadow-md border-blue-800 p-2 rounded-md font-bold transform duration-100 hover:scale-95`;
+  const [devJournyIsActive, setDevJournyIsActive] = useState(true);
+
   const otherProjects = (
     <a
-      href="#alyeqeenApps"
+      href="#projects"
       title="Al-Yeqeen Apps"
-      className="font-bold bg-white/9 rounded-md p-1 hover:bg-darkBlue1/60"
+      className="font-bold bg-darkBlue2/20 rounded-md p-1 hover:bg-yellow-500"
       target="_blank"
     >
       other projects
@@ -20,7 +20,7 @@ const HomeSection2 = () => {
     <a
       href="https://principleclean.com/"
       title="Principle Cleaning Services"
-      className="font-bold bg-white/9 rounded-md p-1 hover:bg-darkBlue1/60"
+      className="font-bold bg-darkBlue2/20 rounded-md p-1 hover:bg-yellow-500"
       target="_blank"
     >
       Principle Cleaning Services
@@ -36,9 +36,9 @@ const HomeSection2 = () => {
     </div>
   );
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center gap-10 py-15 mt-10  px-10 text-white">
+    <div className="flex flex-col md:flex-row bg-white items-center justify-center gap-10 py-15 px-10 text-darkBlue3 font-bold">
       {/* left div */}
-      <div className="w-full  font-semibold text-xl flex flex-col py-20">
+      <div className="w-full font-semibold text-xl flex flex-col py-20">
         <h1 id="aboutme" className="mt-24 mb-10 font-extrabold text-[40px] text-center">
           About Me
         </h1>
@@ -73,22 +73,22 @@ const HomeSection2 = () => {
         </div>
       </div>
       {/* right div */}
-      <div className="flex flex-col gap-y-10 bg-white text-blue-900 justify-center items-center p-8 rounded-2xl md:w-1/2 min-h-[600px]">
+      <div className="flex flex-col gap-y-5 p-4 text-darkBlue1 justify-center items-center rounded-2xl md:w-1/2 min-h-[600px]">
         {/* top div */}
-        <div id="devjourney" className="flex justify-center items-center gap-6">
+        <div id="devjourney" className="flex justify- text-[18px] underline items-center gap-6">
           <button
             type="button"
             title="Development Journey"
-            className={`${buttonStyling} ${devJournyIsActive ? "bg-blue-900 text-white" : ""}`}
-            onClick={() => setDevJournyIsActive(!devJournyIsActive)}
+            className="p-2 rounded-md font-bold transform duration-100 hover:scale-95"
+            onClick={() => setDevJournyIsActive(true)}
           >
             Development Journey
           </button>
           <button
             type="button"
             title="Skills & Technology"
-            className={`${buttonStyling} ${!devJournyIsActive ? "bg-blue-900 text-white" : ""}`}
-            onClick={() => setDevJournyIsActive(!devJournyIsActive)}
+            className="p-2 rounded-md font-bold transform duration-100 hover:scale-95"
+            onClick={() => setDevJournyIsActive(false)}
           >
             CV / Resume
           </button>

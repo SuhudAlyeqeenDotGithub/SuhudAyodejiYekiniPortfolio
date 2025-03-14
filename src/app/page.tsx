@@ -10,8 +10,8 @@ export default function Home() {
     <div>
       <HomeSection1 />
       <HomeSection3 />
+      <Projects />
       <HomeSection2 />
-      <Projects/>
       <ContactSection />
     </div>
   );

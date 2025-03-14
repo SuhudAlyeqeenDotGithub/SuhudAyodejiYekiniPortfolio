@@ -9,7 +9,7 @@ function Header() {
   // const [onProfile, setOnProfile] = useState(false);
   // const parentLinkStyling = "hover:bg-darkBlue2/90 font-bold text-lg whitespace-nowrap p-2 rounded-md";
   const childLinkStyling =
-    "hover:bg-white text-center hover:text-darkBlue2 font-semibold text-lg transform duration-500 hover:scale-115 whitespace-nowrap w-full p-2 rounded hover:cursor-pointer";
+    "hover:bg-amber-500/90 font-bold text-lg whitespace-nowrap w-full p-2 rounded hover:cursor-pointer";
 
   // const profileLinks = (
   //   <div className="absolute left-0 top-full bg-darkBlue2/90 rounded-md p-4 z-10">
@@ -28,11 +28,11 @@ function Header() {
   // );
 
   return (
-    <div className="flex flex-wrap lg:nowrap items-center justify-center lg:px-20 py-8 gap-y-5 gap-x-50">
-      <div className="flex-shrink-0">
+    <div className="flex flex-col sm:flex-wrap items-center justify-between py-8 g-red-500 gap-y-5">
+      <div className="flex-shrink-0 g-yellow-500">
         <Image src="/alyeqeenLogo.png" alt="Al-Yeqeen Logo" width={200} height={200} className="object-cover" />
       </div>
-      <nav className="">
+      <nav className="h-[50px]">
         {/* <ul className="flex flex-wrap md:flex-nowrap gap-5">
           <div
             className={`relative ${parentLinkStyling}`}
@@ -49,13 +49,22 @@ function Header() {
           <li>Al-Yeqeen Apps</li>
         </ul> */}
         <ul className="flex flex-wrap md:flex-nowrap gap-5">
+          {" "}
+          <li
+            className={childLinkStyling}
+            onClick={() => {
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Projects
+          </li>
           <li
             className={childLinkStyling}
             onClick={() => {
               document.getElementById("workexperience")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Work Experience
+            Experience
           </li>
           <li
             className={childLinkStyling}
@@ -68,10 +77,10 @@ function Header() {
           <li
             className={childLinkStyling}
             onClick={() => {
-              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+              document.getElementById("education")?.scrollIntoView({ behavior: "smooth" });
             }}
           >
-            Projects
+            Education
           </li>
           <li
             className={childLinkStyling}
@@ -81,15 +90,6 @@ function Header() {
           >
             Resume / CV
           </li>
-          <li
-            className={childLinkStyling}
-            onClick={() => {
-              document.getElementById("education")?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Education
-          </li>
-
           {/* <li
             className={childLinkStyling}
             onClick={() => {

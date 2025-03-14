@@ -3,10 +3,10 @@ import { useState } from "react";
 
 const HomeSection3 = () => {
   const [activeButton, setActiveButton] = useState("Software Projects");
-  const buttonStyling = `border-3 shadow-md border-white p-4 rounded-md font-bold transform duration-300 hover:scale-110`;
-  const activeBtnSyling = "bg-white text-blue-900 border-none";
+  const buttonStyling = `shadow-md border-2 border-gray-500 p-4 text-darkBlue2 rounded-md font-bold transform duration-300 hover:scale-110`;
+  const activeBtnSyling = "bg-[#425559] text-white border-none";
   const jobRoles = ["Software Projects", "Data Excecutive & Systems Developer"];
-  const divCardStyle = "bg-white text-blue-900 p-8 rounded-md w-full transform duration-300 hover:scale-105";
+  const divCardStyle = "bg-white/95 text-darkBlue2 p-8 rounded-md w-full transform duration-300 hover:scale-105";
 
   const taskTracker = (
     <a
@@ -61,41 +61,63 @@ const HomeSection3 = () => {
 
   const contentToDisplay = activeButton === "Software Projects" ? softwareProjects : dataExcecutiveProjects;
   return (
-    <div className="text-white font-bold flex flex-wrap md:flex-col p-5 md:p-20 mt-10  justify-between gap-10">
-      <div className="flex flex-wrap md:flex-nowrap justify-between gap-10">
-        <div className={divCardStyle}>
-          <h1 id="skills" className="font-extrabold text-[30px] mb-5 text-center">
-            Skills
-          </h1>
-          <ul className="list-disc list-inside flex flex-col gap-5">
-            <li>
-              <b>Development:</b> JavaScript, Node.js, React.js, Next.js, TypeScript, Express.js, HTML, CSS, Redux, Git,
-              Tailwind CSS, AppScript, SQL, NoSQL, MongoDB, Mongoose, Axios, Java, Python, Tkinter, JWT(Json Web Token)
-              Authentication.
-            </li>
-            <li>
-              <b>Techniques:</b> Data Structure & Algorithm, Object Oriented Programming, CRUD, MERN, Bcrypt, Microsoft
-              Excel, VBA.
-            </li>
-            <li>
-              <b>Others:</b> UI/UX, Responsive Design, Trello, Figma, Lucid Charts, Canva, Google Sheets, Microsoft
-              Access.
-            </li>
-          </ul>
+    <div className="text-darkBlue2 font-bold bg-[#b7dbd2] flex flex-wrap md:flex-col md:px-40 justify-between gap-5">
+      <div className="flex flex-col items-center justify-center w-full gap-25 p-5 ">
+        <div className="flex flex-wrap md:flex-nowrap justify-between gap-10 mt-40">
+          <div className={divCardStyle}>
+            <h1 id="skills" className="font-extrabold text-[30px] mb-5 text-center">
+              Skills
+            </h1>
+            <ul className="list-disc list-inside flex flex-col gap-5">
+              <li>
+                <b>Development:</b> JavaScript, Node.js, React.js, Next.js, TypeScript, Express.js, HTML, CSS, Redux,
+                Git, Tailwind CSS, AppScript, SQL, NoSQL, MongoDB, Mongoose, Axios, Java, Python, Tkinter, JWT(Json Web
+                Token) Authentication.
+              </li>
+              <li>
+                <b>Techniques:</b> Data Structure & Algorithm, Object Oriented Programming, CRUD, MERN, Bcrypt,
+                Microsoft Excel, VBA.
+              </li>
+              <li>
+                <b>Others:</b> UI/UX, Responsive Design, Trello, Figma, Lucid Charts, Canva, Google Sheets, Microsoft
+                Access.
+              </li>
+            </ul>
+          </div>
+          <div className={divCardStyle}>
+            <h1 id="education" className="font-extrabold text-[30px] text-center mb-5 text">
+              Education
+            </h1>
+            <ul className="list-disc list-inside flex flex-col gap-5">
+              <li>
+                BTEC Level 3 National Extended Diploma in Information Technology (Grade **D) - Sep 2022 - Jul 2024{" "}
+              </li>
+              <li>GCSE Mathematic (Grade: 5) - Aug 2022</li>
+              <li>GCSE English (Grade: 6) - Aug 2022</li>
+            </ul>
+          </div>
         </div>
-        <div className={divCardStyle}>
-          <h1 id="education" className="font-extrabold text-[30px] text-center mb-5 text">
-            Education
-          </h1>
-          <ul className="list-disc list-inside flex flex-col gap-5">
-            <li>BTEC Level 3 National Extended Diploma in Information Technology (Grade **D) - Sep 2022 - Jul 2024 </li>
-            <li>GCSE Mathematic (Grade: 5) - Aug 2022</li>
-            <li>GCSE English (Grade: 6) - Aug 2022</li>
-          </ul>
+        <div className="flex gap-5 items-center justify-center w-full">
+          <button
+            className="shadow-m bg-amber-500 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-yellow-600"
+            onClick={() => {
+              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Al-Yeqeen Apps
+          </button>
+          <button
+            className="shadow-m text-white bg-darkBlue2 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue1/90 "
+            onClick={() => {
+              document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            Email Me
+          </button>
         </div>
       </div>
 
-      <div className="w-full flex flex-col gap-10 text-lg items-center mt-10">
+      <div className="w-full flex flex-col mt-10 p-8 gap-10 text-lg items-center">
         <h1 id="workexperience" className="font-extrabold text-[40px] text-center">
           Work Experience
         </h1>
@@ -111,14 +133,6 @@ const HomeSection3 = () => {
               {role}
             </button>
           ))}
-          <button
-            className={buttonStyling}
-            onClick={() => {
-              document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Projects
-          </button>
         </div>
         <div className="p-4">{contentToDisplay}</div>
       </div>

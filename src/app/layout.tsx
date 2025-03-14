@@ -19,7 +19,9 @@ export default function RootLayout({
         {/* <script src="https://www.google.com/recaptcha/api.js" async defer></script> */}
         <meta name="google-site-verification" content="XLCrSDkihp0w244nSySE9heltmIvH7ZZxSB_pacxsOQ" />
       </head>
-      <body className="font-nunito font-semibold antialiased bg-blue-800">{children}</body>
+      <body className="font-khula font-semibold antialiased bg-gradient-to-b to-darkBlue2 from-darkTeal1">
+        {children}
+      </body>
     </html>
   );
 }
