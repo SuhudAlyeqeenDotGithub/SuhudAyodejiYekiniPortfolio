@@ -21,8 +21,8 @@ function HomeSection1() {
           <div className="flex flex-wrap md:flex-nowrap gap-5 mt-10 items-center justify-center w-full">
             <button
               type="button"
-              title="Al-Yeqeen Apps"
-              className="border- bg-amber-600 p-4 text-[18px] whitespace-nowrap w-full rounded-md transform duration-200 hover:scale-105 font-bold"
+              title="Projects"
+              className="cursor-pointer border- bg-amber-600 p-4 text-[18px] whitespace-nowrap w-full rounded-md transform duration-200 hover:scale-105 font-bold"
               onClick={() => {
                 document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
               }}
@@ -31,8 +31,8 @@ function HomeSection1() {
             </button>
             <button
               type="button"
-              title="Al-Yeqeen Apps"
-              className="p-4 text-[18px] w-full bg-white text-darkBlue2 whitespace-nowrap rounded-md transform duration-200 hover:scale-105 font-bold"
+              title="Experience"
+              className="cursor-pointer p-4 text-[18px] w-full bg-white text-darkBlue2 whitespace-nowrap rounded-md transform duration-200 hover:scale-105 font-bold"
               onClick={() => {
                 document.getElementById("workexperience")?.scrollIntoView({ behavior: "smooth" });
               }}

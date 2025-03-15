@@ -99,7 +99,8 @@ const HomeSection3 = () => {
         </div>
         <div className="flex flex-wrap gap-5 items-center justify-center w-full">
           <button
-            className="whitespace-nowrap shadow-m bg-amber-500 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-yellow-600"
+            title="Al-Yeqeen Apps"
+            className="cursor-pointer whitespace-nowrap shadow-m bg-amber-500 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-amber-400"
             onClick={() => {
               document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
             }}
@@ -107,7 +108,8 @@ const HomeSection3 = () => {
             Al-Yeqeen Apps
           </button>
           <button
-            className="whitespace-nowrap hadow-m text-white bg-darkBlue2 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue1/90 "
+            title="Email Me"
+            className="animate-ease-out [animation-duration:_2s] cursor-pointer whitespace-nowrap hadow-m text-white bg-darkBlue2 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue3 "
             onClick={() => {
               document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
             }}

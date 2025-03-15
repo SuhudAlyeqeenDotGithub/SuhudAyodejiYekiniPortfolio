@@ -31,7 +31,7 @@ const HomeSection2 = () => {
     </div>
   );
   return (
-    <div className="flex flex-col bg-white py-10">
+    <div className="flex flex-col bg-white py-10 md:pr-10">
       <div className="flex flex-col md:flex-row items-center justify-center gap-5 py-10 text-darkBlue3 font-bold">
         {/* left div */}
         <div className="w-full font-semibold text-xl flex flex-col px-10 py-10">
@@ -75,7 +75,7 @@ const HomeSection2 = () => {
             <button
               type="button"
               title="Development Journey"
-              className="p-2 font-bold transform duration-100 hover:scale-95 border-2 shadow-md bg-gray-50"
+              className="cursor-pointer p-2 font-bold transform duration-100 hover:scale-95 border-2 shadow-md bg-gray-100 outline-2 outline-amber-500"
               onClick={() => setDevJournyIsActive(true)}
             >
               Development Journey
@@ -83,7 +83,7 @@ const HomeSection2 = () => {
             <button
               type="button"
               title="Skills & Technology"
-              className="p-2 font-bold transform duration-100 hover:scale-95 border-2 shadow-md bg-gray-50"
+              className="cursor-pointer p-2 font-bold transform duration-100 hover:scale-95 border-2 shadow-md bg-gray-100 outline-2 outline-amber-500"
               onClick={() => setDevJournyIsActive(false)}
             >
               CV / Resume
@@ -95,7 +95,7 @@ const HomeSection2 = () => {
       </div>{" "}
       <div className="flex flex-wrap gap-5 items-center justify-center w-full px-4">
         <button
-          className="whitespace-nowrap shadow-m text-white bg-amber-500 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-yellow-600"
+          className="cursor-pointer whitespace-nowrap shadow-m text-white bg-amber-500 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-yellow-600"
           onClick={() => {
             document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
           }}
