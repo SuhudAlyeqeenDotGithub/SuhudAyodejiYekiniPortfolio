@@ -92,7 +92,7 @@ const HomeSection2 = () => {
 
           {devJournyIsActive ? <Accordion /> : resume}
         </div>
-      </div>{" "}
+      </div>
       <div className="flex flex-wrap gap-5 items-center justify-center w-full px-4">
         <button
           className="cursor-pointer whitespace-nowrap shadow-m text-white bg-amber-500 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-yellow-600"

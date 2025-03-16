@@ -22,14 +22,14 @@ export async function POST(req: NextRequest) {
       service: "gmail",
       auth: {
         user: process.env.EMAIL,
-        pass: process.env.PASSWORD // Ensure you are using an App Password for Gmail
+        pass: process.env.PASSWORD 
       }
     });
 
     // Configure mail options
     const mailOptions = {
       from: senderEmail,
-      to: process.env.EMAIL, // The email you want to receive the message at
+      to: process.env.EMAIL, 
       subject: `Suhud Al-Yeqeen App Message from ${name}`,
       text: `Hi Suhud. Please see the below message from ${name} || ${senderEmail}: \n\n${message}`
     };

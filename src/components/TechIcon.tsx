@@ -1,13 +1,41 @@
 import { DiMongodb } from "react-icons/di";
 import { FaReact, FaGit, FaNodeJs } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiRedux, SiMongoose, SiNextdotjs, SiHtml5, SiCss3, SiExpress, SiTypescript, SiJavascript } from "react-icons/si";
+import {
+  SiRedux,
+  SiMongoose,
+  SiNextdotjs,
+  SiHtml5,
+  SiCss3,
+  SiExpress,
+  SiTypescript,
+  SiJavascript,
+  SiVercel,
+  SiOpenai
+} from "react-icons/si";
 
 const ReactIcon = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <FaReact className="text-blue-600 text-4xl" /> {/* React icon color */}
       <p>React</p>
+    </div>
+  );
+};
+const OpenAIIcon = () => {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <SiOpenai className="text-black text-4xl" />
+      <p>OpenAI</p>
+    </div>
+  );
+};
+
+const VercelIcon = () => {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <SiVercel className="text-black text-4xl" />
+      <p>Vercel</p>
     </div>
   );
 };
@@ -133,5 +161,7 @@ export {
   ExpressIcon,
   TypeScriptIcon,
   GitIcon,
-  JavascriptIcon
+  JavascriptIcon,
+  OpenAIIcon,
+  VercelIcon
 };

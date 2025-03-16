@@ -12,7 +12,9 @@ import {
   ExpressIcon,
   TypeScriptIcon,
   GitIcon,
-  JavascriptIcon
+  JavascriptIcon,
+  OpenAIIcon,
+  VercelIcon
 } from "./TechIcon";
 
 const Projects = () => {
@@ -21,7 +23,7 @@ const Projects = () => {
       title: "Al-Yeqeen Task Tracker",
       description:
         "A task management app that provides a comprehensive and intuitive interface, allowing users to efficiently organize and track their workflow by offering a clear breakdown of tasks, including completed, in-progress, and terminated tasks, all at a glance.",
-      imageSrc: "/alyeqeentasktrackerimage.png",
+
       pageLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
       gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/Al-Yeqeen-Task-Tracker-App",
       techStack: (
@@ -43,13 +45,13 @@ const Projects = () => {
     {
       title: "Al-Yeqeen Portfolio",
       description:
-        "A personal portfolio that highlights my professional experience, educational background, and a showcase of projects, demonstrating my skills and expertise through detailed examples of my work and achievements.",
-      imageSrc: "/portfolioimage.png",
+        "A personal portfolio showcasing my professional experience, education, and projects, highlighting my skills and achievements, while boosting online engagement by 90%",
       pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/",
       gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
       techStack: (
         <div className="flex flex-wrap gap-5 justify-center items-center">
           <JavascriptIcon />
+
           <TypeScriptIcon />
           <ReactIcon />
           <NodeJsIcon />
@@ -60,7 +62,27 @@ const Projects = () => {
           <GitIcon />
         </div>
       ),
-      compStatus: "98%"
+      compStatus: "100%"
+    },
+    {
+      title: "Al-Yeqeen Bot",
+      description:
+        "Al-Yeqeen Bot is an intelligent assistant that helps users quickly find information about me. It offers customizable features like language preferences, theme colors, and chat visibility, making the website 95% easier to explore.",
+      imageSrc: "/alyqeen-bot-image.png", // Replace with actual bot image
+      pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/", // Same portfolio link, or you can provide a separate one if needed
+      gitHubLink:
+        "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio/tree/master/src/components/Al_Yeqeen_Bot_Assistant", // Provide the GitHub link for the bot’s repository
+      techStack: (
+        <div className="flex flex-wrap gap-5 justify-center items-center">
+          <JavascriptIcon />
+          <VercelIcon />
+          <OpenAIIcon />
+          <ReactIcon />
+          <NextJsIcon />
+          <TailwindIcon />
+        </div>
+      ),
+      compStatus: "100%" // Adjust the completion status accordingly
     }
     // {
     //   title: "Al-Yeqeen SmartTasks",
