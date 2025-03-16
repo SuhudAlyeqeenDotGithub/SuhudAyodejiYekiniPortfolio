@@ -1,11 +1,13 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import { FiMinimize2, FiMaximize2 } from "react-icons/fi";
 import { IoCloseSharp } from "react-icons/io5";
-require("dotenv").config();
+import dotenv from "dotenv";
+
+dotenv.config();
+import responseInfo from "./ResponseInformation";
 
 function AIAssistant() {
-  const [response, setResponse] = useState("");
   const [userInput, setUserInput] = useState("");
   const [openChat, setOpenChat] = useState(false);
   const [imageHovered, setImageHovered] = useState(false);
@@ -14,10 +16,17 @@ function AIAssistant() {
   const textAreaInput = useRef<HTMLTextAreaElement>(null);
   const [minimizeChat, setMinimizeChat] = useState(true);
   const [theme, setTheme] = useState("white");
-  const [fetchSent, setFetchSent] = useState(false);
+
   const [conversationArray, setConversationArray] = useState<[string, string][]>([
     ["", "Welcome, what do you want to know about Suhud?"]
   ]);
+  const divRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (divRef.current) {
+      divRef.current.scrollTop = divRef.current.scrollHeight;
+    }
+  }, [conversationArray]);
 
   const handleConversation = (userInput: string, response: string): [string, string][] => {
     return [...conversationArray, [userInput, response] as [string, string]];
@@ -26,13 +35,14 @@ function AIAssistant() {
   const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
   const fetchData = async () => {
-    // setConversationArray([...conversationArray, [userInput, ""]]);
-    // console.log("conversation before data fetch", [...conversationArray, [userInput, ""]]);
-
+    setUserInput("");
     try {
       const data = {
         model: "gpt-3.5-turbo",
-        messages: [{ role: "user", content: userInput }]
+        messages: [
+          { role: "system", content: responseInfo },
+          { role: "user", content: userInput }
+        ]
       };
 
       const res = await fetch("https://api.openai.com/v1/chat/completions", {
@@ -47,7 +57,6 @@ function AIAssistant() {
       const result = await res.json();
 
       setConversationArray(handleConversation(userInput, result.choices[0].message.content));
-      setUserInput("");
     } catch (error) {
       handleConversation(userInput, error instanceof Error ? error.message : "An unknown error occurred");
     }
@@ -68,26 +77,6 @@ function AIAssistant() {
       fetchData();
     }
   };
-  /*
-when ask button is clicked
-call the fetch data
-
-inside fetch data
-
-code : setConversationArray([...conversationArray, [userInput, ""]])
-then fetch data
-if fetch is successfull
-access the last item(arr) [userInput, ""]] of conversation array and edit it to [userInput, response]
-if fetch is unsuccessfull 
-access the last item(arr) [userInput, ""]] of conversation array and edit it to [userInput, errorMessage]
-code : invoke setConversationArray(handleConversation (userInput, response))
-
-definition =  {
-let copyArray = [...conversationArray]
-copyArray[copyArray.length - 1] = [[userInput, response]]
-return copyArray
-} 
-*/
 
   const messageStlye = `${
     hideMessage ? "hidden" : ""
@@ -206,7 +195,7 @@ return copyArray
         </div>
       </div>
 
-      <div className="p-4 flex-col flex gap-8 overflow-auto w-full h-[100%]">
+      <div ref={divRef} className="p-4 flex-col flex gap-8 overflow-auto w-full h-[100%]">
         {conversationArray.map(([prompt, response], index) => (
           <div key={index} className="flex-col flex gap-5 w-full">
             {prompt !== "" && (

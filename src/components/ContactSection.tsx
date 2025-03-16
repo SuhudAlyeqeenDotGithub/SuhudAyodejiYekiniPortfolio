@@ -106,7 +106,7 @@ const ContactSection = () => {
               <button
                 type="submit"
                 disabled={!senderEmail || !message}
-                className="disabled:bg-red-500/ whitespace-nowrap bg-amber-600 disabled:cursor-not-allowed font-extrabold text-lg mt-5 rounded-md transform duration-100 md:w-1/3 p-4 hover:scale-105"
+                className="disabled:bg-red-500/ whitespace-nowrap bg-amber-600 disabled:cursor-not-allowed font-extrabold text-lg mt-5 rounded-md transform duration-100 p-4 hover:scale-105"
                 title="Submit"
               >
                 {senderEmail && message ? "Submit" : "Fill in the form Please"}
