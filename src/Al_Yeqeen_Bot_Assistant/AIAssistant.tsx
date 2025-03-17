@@ -47,6 +47,7 @@ function AIAssistant() {
         ]
       };
 
+      console.log("log before fetch", userInput);
       const res = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
         headers: {
@@ -58,6 +59,7 @@ function AIAssistant() {
 
       const result = await res.json();
       setFetchingResponse(false);
+      console.log("log after fetch", handleConversation(userInput, result.choices[0].message.content));
 
       setConversationArray(handleConversation(userInput, result.choices[0].message.content));
     } catch (error) {
