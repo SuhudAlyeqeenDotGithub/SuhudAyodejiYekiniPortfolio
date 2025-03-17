@@ -83,7 +83,7 @@ function AIAssistant() {
 
   const messageStlye = `${
     hideMessage ? "hidden" : ""
-  }  text-darkBlue3 flex flex-col gap-5 w-2/3 p-4 rounded-md bg-[#F5F5DC] font-bold animate-bounce  [animation-duration:_1.5s]`;
+  }  text-darkBlue3 flex flex-col gap-5 w-2/3 p-4 rounded-md bg-[#F5F5DC] font-bold animate-bounce [animation-duration:_1.5s]`;
 
   const imageOptions = (
     <div className="bg-darkBlue3 p-4 rounded-md text-white flex justify-center items-center gap-2 absolute z-40 right-27 bottom-10">
@@ -142,7 +142,7 @@ function AIAssistant() {
           className="relative w-[106px] h-[103px] flex items-center justify-center shadow-lg hover:scale-110 transform duration-300 rounded-full hover:cursor-pointer"
         >
           {/* Spinning Outer Circle */}
-          <div className="absolute h-[106px] w-[106px] bg-amber-500 border-t-8 border-darkBlue2 rounded-full animate-spin"></div>
+          <div className="absolute h-[106px] w-[106px] border-8 border-b-darkBlue2 border-r-amber-500 border-t-green-500 rounded-full animate-spin"></div>
 
           {/* Centered Inner Circle */}
           <div className="absolute h-[100px] w-[100px] bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center">
@@ -327,9 +327,7 @@ function AIAssistant() {
   );
 
   return (
-    <div className=" bg-blue-500">
-      {/* <div className="flex flex-col w-[400px] gap-3 fixed bottom-5 top-5 right-4 z-30"></div>
-      <div className="flex flex-col w-[400px] gap-3 fixed bottom-5 top-5 right-4 z-30"></div> */}
+    <div>
       {openChat && chatDialog}
       {!hideImage && popUpPrompt}
       {hideImage && !openChat && showChatBtn}

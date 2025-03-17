@@ -11,8 +11,28 @@ import {
   SiTypescript,
   SiJavascript,
   SiVercel,
-  SiOpenai
+  SiOpenai,
+  SiPostgresql,
+  SiMysql
 } from "react-icons/si";
+
+const PostgreSQLIcon = () => {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <SiPostgresql className="text-green-700 text-4xl" />
+      <p>PostgreSQL</p>
+    </div>
+  );
+};
+
+const MySQLIcon = () => {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <SiMysql className="text-blue-500 text-4xl" />
+      <p>MySQL</p>
+    </div>
+  );
+};
 
 const ReactIcon = () => {
   return (
@@ -163,5 +183,7 @@ export {
   GitIcon,
   JavascriptIcon,
   OpenAIIcon,
-  VercelIcon
+  VercelIcon,
+  PostgreSQLIcon,
+  MySQLIcon
 };
