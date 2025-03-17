@@ -34,6 +34,8 @@ function AIAssistant() {
   };
 
   const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
+  console.log("api key1", process.env.NEXT_PUBLIC_OPENAI_API_KEY);
+  console.log("api key2", apiKey);
 
   const fetchData = async () => {
     setFetchingResponse(true);
