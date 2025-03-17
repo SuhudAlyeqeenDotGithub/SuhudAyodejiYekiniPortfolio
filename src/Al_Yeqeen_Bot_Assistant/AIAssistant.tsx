@@ -82,8 +82,8 @@ function AIAssistant() {
   };
 
   const messageStlye = `${
-    hideMessage ? "hidden" : ""
-  }  text-darkBlue3 flex flex-col md:gap-5 gap-1 md:w-2/3 p-2 md:p-4 rounded-md bg-[#F5F5DC] font-bold lg:block hidden animate-bounce [animation-duration:_1.5s]`;
+    hideMessage ? "hidden" : "lg:block hidden"
+  }  text-darkBlue3 flex flex-col md:gap-5 gap-1 md:w-2/3 p-2 md:p-4 rounded-md bg-[#F5F5DC] font-bold animate-bounce [animation-duration:_1.5s]`;
 
   const imageOptions = (
     <div className="bg-darkBlue3 p-4 rounded-md text-white flex justify-center items-center gap-2 absolute z-40 right-27 bottom-10">
