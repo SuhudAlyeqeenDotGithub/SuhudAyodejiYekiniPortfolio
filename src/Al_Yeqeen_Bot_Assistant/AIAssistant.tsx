@@ -174,7 +174,7 @@ function AIAssistant() {
         minimizeChat
           ? "lg:h-[90%] lg:w-[30%] md:h-[80%] md:w-[30%] h-[90%] w-[90%] "
           : "md:h-[90%] md:w-[90%] h-[90%] w-[90%]"
-      } shadow-lg gap-2 pt-4 flex flex-col items-center justify-between fixed md:top-[3%] top-[1%] md:right-8 right-9 z-30`}
+      } shadow-lg gap-2 pt-4 flex flex-col items-center justify-between fixed md:top-[3%] top-[3%] md:right-8 right-5 z-30`}
     >
       <div className="flex items-center justify-between w-full px-5">
         <h1 className="text-[25px] font-extrabold">Suhud&apos;s Assistant</h1>
