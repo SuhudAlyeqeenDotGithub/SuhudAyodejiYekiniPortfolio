@@ -150,10 +150,10 @@ const Projects = () => {
             />
           ))}
         </div>
-        <div className="flex flex-wrap gap-5 items-center justify-center w-full">
+        <div className="flex flex-col md:flex-row gap-5 items-center justify-center w-full">
           <button
             title="Let's Collaborate"
-            className="cursor-pointer whitespace-nowrap text-white shadow-m w-[400px] text-[18px] p-4 rounded-full bg-gradient-to-r from-green-600 to-blue-600 font-extrabold transform duration-300 hover:scale-105"
+            className="cursor-pointer whitespace-nowrap text-white shadow-md md:w-[400px] text-[18px] p-4 rounded-full bg-gradient-to-r from-green-600 to-blue-600 font-extrabold transform duration-300 hover:scale-105"
             onClick={() => {
               document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
             }}
@@ -162,7 +162,7 @@ const Projects = () => {
           </button>
           <button
             title="Send Feedback"
-            className="cursor-pointer whitespace-nowrap shadow-m text-white bg-darkBlue3 w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue2 "
+            className="cursor-pointer whitespace-nowrap shadow-m text-white bg-darkBlue3 md:w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 hover:bg-darkBlue2 "
             onClick={() => {
               document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
             }}
@@ -175,7 +175,7 @@ const Projects = () => {
         <div className="flex flex-col gap-5 items-center justify-center w-full mt-5">
           <p
             title="Upcoming Projects"
-            className=" border-b-4 border-darkBlue3 text-darkBlue3 shadow-m text-[40px] p-8 w-1/2 font-extrabold text-center animate-bounce [animation-duration:_2s]"
+            className=" border-b-4 border-darkBlue3 text-darkBlue3 shadow-md text-[40px] p-8 w-1/2 font-extrabold text-center animate-bounce [animation-duration:_2s]"
           >
             Upcoming Projects
           </p>
@@ -196,7 +196,7 @@ const Projects = () => {
         <div className="flex flex-col gap-5 justify-center items-center">
           <button
             title="Any Suggestions?"
-            className="cursor-pointer whitespace-nowrap shadow-m w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 bg-blue-600 text-white hover:scale-105"
+            className="cursor-pointer whitespace-nowrap shadow-md md:w-[400px] text-[18px] p-4 rounded-full font-extrabold transform duration-300 bg-blue-600 text-white hover:scale-105"
             onClick={() => {
               document.getElementById("contactme")?.scrollIntoView({ behavior: "smooth" });
             }}

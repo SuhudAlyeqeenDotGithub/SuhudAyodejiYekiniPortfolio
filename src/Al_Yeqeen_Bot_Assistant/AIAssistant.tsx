@@ -122,7 +122,7 @@ function AIAssistant() {
     <div
       className={`${
         hideImage || openChat ? "hidden" : ""
-      } flex items-center justify-end gap-1 md:h-[150px] md:w-[400px] w-[300px] fixed top-[40%] md:right-0 right-2 z-30 cursor-pointer pr-1`}
+      } flex items-center justify-end gap-1 md:h-[150px] md:w-[400px] w-[300px] fixed top-[40%] md:right-0 right-3 z-30 cursor-pointer pr-1`}
     >
       <div className={messageStlye} onClick={() => setOpenChat(true)}>
         <p>
