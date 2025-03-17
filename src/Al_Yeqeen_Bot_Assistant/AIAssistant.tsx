@@ -174,7 +174,7 @@ function AIAssistant() {
       } shadow-lg gap-2 pt-4 flex flex-col items-center justify-between fixed top-[3%] right-4 z-30`}
     >
       <div className="flex items-center justify-between w-full px-5">
-        <h1 className="text-[25px] font-extrabold">Suhud's Assistant</h1>
+        <h1 className="text-[25px] font-extrabold">Suhud&apos;s Assistant</h1>
         <div className="flex flex-row gap-3">
           {minimizeChat ? (
             <FiMaximize2
@@ -236,7 +236,7 @@ function AIAssistant() {
                   height={200}
                   className="rounded-full h-[35px] w-[35px] object-cover shadow-md bg-amber-200"
                 />
-                <p className="">Suhud's Assistant</p>
+                <p className="">Suhud&apos;s Assistant</p>
               </div>
               <div
                 className={`${
