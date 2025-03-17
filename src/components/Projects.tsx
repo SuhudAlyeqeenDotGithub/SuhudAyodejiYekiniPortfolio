@@ -135,9 +135,9 @@ const Projects = () => {
     }
   ];
   return (
-    <div className="flex flex-col pt-30  justify-center items-center bg-[#b7dbd2]">
-      <div className="flex flex-col justify-center pb-20 gap-20 items-center">
-        <div id="projects" className="text-white flex flex-wrap gap-10 px-10 justify-center items-center">
+    <div className="flex flex-col pt-30 justify-center items-center bg-[#b7dbd2]">
+      <div className="flex flex-col justify-center pb-20 gap-20 items-center w-full">
+        <div id="projects" className="text-white flex flex-wrap gap-10 px-10 justify-center items-center w-full">
           {projectsDetails.map(({ title, description, pageLink, gitHubLink, techStack, compStatus }) => (
             <ProjectCard
               key={title}
@@ -150,7 +150,7 @@ const Projects = () => {
             />
           ))}
         </div>
-        <div className="flex flex-col md:flex-row gap-5 items-center justify-center w-full">
+        <div className="flex flex-col md:flex-row gap-5 items-center justify-center">
           <button
             title="Let's Collaborate"
             className="cursor-pointer whitespace-nowrap text-white shadow-md md:w-[400px] text-[18px] p-4 rounded-full bg-gradient-to-r from-green-600 to-blue-600 font-extrabold transform duration-300 hover:scale-105"
@@ -171,7 +171,7 @@ const Projects = () => {
           </button>
         </div>
       </div>
-      <div className=" bg-blue-300/20 w-full py-10 flex flex-col gap-10">
+      <div className=" bg-blue-300/20 w-full flex flex-col justify-center pb-20 gap-20 items-center">
         <div className="flex items-center justify-center w-full mt-5">
           <p
             title="Upcoming Projects"
@@ -180,7 +180,7 @@ const Projects = () => {
             Upcoming Projects
           </p>
         </div>
-        <div className="text-white flex flex-wrap gap-10 justify-center items-center">
+        <div className="text-white flex flex-wrap gap-10 px-10 justify-center items-center w-full">
           {upcomingProjectsDetails.map(({ title, description, pageLink, gitHubLink, techStack, compStatus }) => (
             <ProjectCard
               key={title}
