@@ -180,13 +180,13 @@ function AIAssistant() {
             <FiMaximize2
               title="Maximize Chat"
               onClick={() => setMinimizeChat(false)}
-              className="cursor-pointer hover:bg-gray-200 h-[30px] w-[35px] p-1 text-lg rounded-full font-extrabold font-nunito flex justify-center items-center"
+              className="cursor-pointer hover:bg-gray-200 hover:text-darkBlue3 h-[30px] w-[35px] p-1 text-lg rounded-full font-extrabold font-nunito flex justify-center items-center"
             />
           ) : (
             <FiMinimize2
               title="Minimize Chat"
               onClick={() => setMinimizeChat(true)}
-              className="cursor-pointer hover:bg-gray-200 h-[30px] w-[35px] p-1 text-lg rounded-full font-extrabold font-nunito flex justify-center items-center"
+              className="cursor-pointer hover:bg-gray-200 hover:text-darkBlue3 h-[30px] w-[35px] p-1 text-lg rounded-full font-extrabold font-nunito flex justify-center items-center"
             />
           )}
 
@@ -291,7 +291,9 @@ function AIAssistant() {
                 : theme === "teal"
                 ? "bg-white text-darkBlue3 hover:bg-amber-100"
                 : "bg-darkBlue3 text-white hover:bg-darkBlue1"
-            } w-1/2 shadow-md rounded-full p-2 cursor-pointer font-bold disabled:cursor-not-allowed`}
+            } shadow-md rounded-full ${
+              minimizeChat ? "w-1/2" : "text-[17px] w-1/3"
+            } p-2 cursor-pointer font-bold disabled:cursor-not-allowed`}
             onClick={fetchData}
           >
             Ask
