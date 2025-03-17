@@ -16,6 +16,7 @@ function AIAssistant() {
   const textAreaInput = useRef<HTMLTextAreaElement>(null);
   const [minimizeChat, setMinimizeChat] = useState(true);
   const [theme, setTheme] = useState("white");
+  const [fetchingResponse, setFetchingResponse] = useState(false);
 
   const [conversationArray, setConversationArray] = useState<[string, string][]>([
     ["", "Welcome, what do you want to know about Suhud?"]
@@ -35,12 +36,13 @@ function AIAssistant() {
   const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
   const fetchData = async () => {
+    setFetchingResponse(true);
     setUserInput("");
     try {
       const data = {
-        model: "gpt-3.5-turbo",
+        model: "gpt-4o-mini",
         messages: [
-          { role: "system", content: responseInfo },
+          { role: "developer", content: responseInfo },
           { role: "user", content: userInput }
         ]
       };
@@ -55,6 +57,7 @@ function AIAssistant() {
       });
 
       const result = await res.json();
+      setFetchingResponse(false);
 
       setConversationArray(handleConversation(userInput, result.choices[0].message.content));
     } catch (error) {
@@ -80,7 +83,7 @@ function AIAssistant() {
 
   const messageStlye = `${
     hideMessage ? "hidden" : ""
-  } text-darkBlue3 flex flex-col gap-5 w-2/3 p-4 rounded-md bg-[#F5F5DC] font-bold animate-bounce  [animation-duration:_1.5s]`;
+  }  text-darkBlue3 flex flex-col gap-5 w-2/3 p-4 rounded-md bg-[#F5F5DC] font-bold animate-bounce  [animation-duration:_1.5s]`;
 
   const imageOptions = (
     <div className="bg-darkBlue3 p-4 rounded-md text-white flex justify-center items-center gap-2 absolute z-40 right-27 bottom-10">
@@ -119,7 +122,7 @@ function AIAssistant() {
     <div
       className={`${
         hideImage || openChat ? "hidden" : ""
-      } flex items-center justify-end gap-1 h-[150px] w-[400px] fixed top-[10%] right-4 z-30`}
+      } flex items-center justify-end gap-1 h-[150px] w-[400px] fixed top-[10%] right-4 z-30 cursor-pointer`}
     >
       <div className={messageStlye} onClick={() => setOpenChat(true)}>
         <p>
@@ -223,6 +226,7 @@ function AIAssistant() {
                 </div>
               </div>
             )}
+
             <div className="flex flex-col justify-start w-full gap-3">
               <div className="flex flex-row items-center justify-start gap-2 font-bold ">
                 <Image
@@ -252,6 +256,12 @@ function AIAssistant() {
         ))}
       </div>
       <div className="w-full p-4 flex flex-col gap-3 justify-center">
+        {fetchingResponse && (
+          <div className="animate-pulse bg-gray-300 rounded-md p-2 text-darkBlue3 flex gap-5 items-center justify-center font-bold">
+            Fetching Response about Suhud......
+            <div className="w-6 h-6 border-4 border-r-amber-500 border-t-darkBlue2 border-l-cyan-500 rounded-full animate-spin"></div>
+          </div>
+        )}
         <textarea
           className={`${
             theme === "darkBlue"
