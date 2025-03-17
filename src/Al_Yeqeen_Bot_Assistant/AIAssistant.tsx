@@ -47,7 +47,6 @@ function AIAssistant() {
         ]
       };
 
-      console.log("log before fetch", userInput);
       const res = await fetch("https://api.openai.com/v1/chat/completions", {
         method: "POST",
         headers: {
@@ -59,7 +58,6 @@ function AIAssistant() {
 
       const result = await res.json();
       setFetchingResponse(false);
-      console.log("log after fetch", handleConversation(userInput, result.choices[0].message.content));
 
       setConversationArray(handleConversation(userInput, result.choices[0].message.content));
     } catch (error) {
@@ -85,7 +83,7 @@ function AIAssistant() {
 
   const messageStlye = `${
     hideMessage ? "hidden" : ""
-  }  text-darkBlue3 flex flex-col gap-5 w-2/3 p-4 rounded-md bg-[#F5F5DC] font-bold animate-bounce [animation-duration:_1.5s]`;
+  }  text-darkBlue3 flex flex-col md:gap-5 gap-1 md:w-2/3 p-2 md:p-4 rounded-md bg-[#F5F5DC] font-bold lg:block hidden animate-bounce [animation-duration:_1.5s]`;
 
   const imageOptions = (
     <div className="bg-darkBlue3 p-4 rounded-md text-white flex justify-center items-center gap-2 absolute z-40 right-27 bottom-10">
@@ -124,15 +122,16 @@ function AIAssistant() {
     <div
       className={`${
         hideImage || openChat ? "hidden" : ""
-      } flex items-center justify-end gap-1 h-[150px] w-[400px] fixed top-[10%] right-4 z-30 cursor-pointer`}
+      } flex items-center justify-end gap-1 md:h-[150px] md:w-[400px] w-[300px] fixed top-[40%] md:right-0 right-2 z-30 cursor-pointer pr-1`}
     >
       <div className={messageStlye} onClick={() => setOpenChat(true)}>
         <p>
-          <span className="text-amber-600 text-[20px]">Hi</span> Suhud put me here to help with your enquires....
+          <span className="text-amber-600 text-sm md:text-[20px]">Hi</span> Suhud put me here to help with your
+          enquires....
         </p>
         <button
           onClick={() => setOpenChat(true)}
-          className="bg-amber-500 p-2 rounded-md hover:bg-amber-600 hover:cursor-pointer"
+          className="bg-amber-500 p-2 w-full rounded-md hover:bg-amber-600 hover:cursor-pointer"
         >
           Open Chat
         </button>
@@ -141,13 +140,13 @@ function AIAssistant() {
         {imageHovered && imageOptions}
         <div
           onClick={() => setOpenChat(true)}
-          className="relative w-[106px] h-[103px] flex items-center justify-center shadow-lg hover:scale-110 transform duration-300 rounded-full hover:cursor-pointer"
+          className="relative w-[106px] h-[103px] flex items-center justify-center hover:scale-110 transform duration-300 hover:cursor-pointer animate-bounce md:animate-none"
         >
           {/* Spinning Outer Circle */}
-          <div className="absolute h-[106px] w-[106px] border-8 border-b-darkBlue2 border-r-amber-500 border-t-green-500 rounded-full animate-spin"></div>
+          <div className="absolute md:h-[106px] md:w-[106px] h-[70px] w-[70px] border-4 border-b-darkBlue2 border-r-amber-500 border-t-green-500 rounded-full animate-spin"></div>
 
           {/* Centered Inner Circle */}
-          <div className="absolute h-[100px] w-[100px] bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center justify-center">
+          <div className="md:h-[100px] md:w-[100px] h-[60px] w-[60px] bg-gradient-to-r from-blue-500 to-green-500 rounded-full flex items-center">
             <Image
               src="/alyeqeenImage.png"
               alt="AI Assistant"
@@ -172,8 +171,10 @@ function AIAssistant() {
           ? "bg-teal-900 text-white"
           : "bg-white text-darkBlue3"
       } rounded-xl ${
-        minimizeChat ? "h-[90%] w-[30%]" : "h-[90%] w-[90%]"
-      } shadow-lg gap-2 pt-4 flex flex-col items-center justify-between fixed top-[3%] right-4 z-30`}
+        minimizeChat
+          ? "lg:h-[90%] lg:w-[30%] md:h-[80%] md:w-[30%] h-[90%] w-[90%] "
+          : "md:h-[90%] md:w-[90%] h-[90%] w-[90%]"
+      } shadow-lg gap-2 pt-4 flex flex-col items-center justify-between fixed md:top-[3%] top-[1%] md:right-8 right-9 z-30`}
     >
       <div className="flex items-center justify-between w-full px-5">
         <h1 className="text-[25px] font-extrabold">Suhud&apos;s Assistant</h1>

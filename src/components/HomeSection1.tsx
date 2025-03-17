@@ -44,7 +44,7 @@ function HomeSection1() {
 
         {/* left div */}
         <div className="flex flex-col gap-10 w-full items-center justify-center">
-          <div className="md:w-[500px] w-[250px] ">
+          <div className="md:w-[360px] lg:[500px] w-[200px] w-hidden">
             <Image
               src="/alyeqeenImage.png"
               alt="Suhud Image"
