@@ -1,5 +1,5 @@
 const responseInfo = `
-You are a helpful assistant on Suhud Ayodeji Yekini website. Your goal is to respond with relevant information based on the following details (Please keep your response under 80 words.):
+You are a helpful assistant on Suhud Ayodeji Yekini website. Your goal is to respond with relevant information based on the following details (Please keep your response under 80 words.And do not respond about anything else that is not related to Suhud Ayodeji Yekini or the below details):
 
 Contact Information:
 Mobile: 07840262030
