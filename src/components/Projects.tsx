@@ -172,10 +172,10 @@ const Projects = () => {
         </div>
       </div>
       <div className=" bg-blue-300/20 w-full py-10 flex flex-col gap-10">
-        <div className="flex flex-col gap-5 items-center justify-center w-full mt-5">
+        <div className="flex items-center justify-center w-full mt-5">
           <p
             title="Upcoming Projects"
-            className=" border-b-4 border-darkBlue3 text-darkBlue3 shadow-md text-[40px] p-8 w-1/2 font-extrabold text-center animate-bounce [animation-duration:_2s]"
+            className=" border-b-4 border-darkBlue3 text-darkBlue3 text-center text-[40px] p-8 font-extrabold animate-bounce [animation-duration:_2s]"
           >
             Upcoming Projects
           </p>
