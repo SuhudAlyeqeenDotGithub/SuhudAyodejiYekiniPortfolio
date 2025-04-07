@@ -6,7 +6,8 @@ const HomeSection3 = () => {
   const buttonStyling = `shadow-md border-2 border-darkBlue2 p-4 text-darkBlue2 rounded-md font-bold transform duration-300 hover:scale-110`;
   const activeBtnSyling = "bg-[#425559] text-white border-none";
   const jobRoles = ["Software Projects", "Data Excecutive & Systems Developer"];
-  const divCardStyle = "bg-white/95 text-darkBlue2 p-8 rounded-md w-full transform duration-300 hover:scale-105";
+  const divCardStyle =
+    "bg-white/95 text-darkBlue2 p-8 rounded-md w-full min-w-[300px] transform duration-300 hover:scale-105";
 
   const taskTracker = (
     <a
