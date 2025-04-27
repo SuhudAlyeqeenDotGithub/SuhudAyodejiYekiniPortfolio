@@ -25,7 +25,7 @@ const Projects = () => {
       description:
         "A task management app that provides a comprehensive and intuitive interface, allowing users to efficiently organize and track their workflow by offering a clear breakdown of tasks, including completed, in-progress, and terminated tasks, all at a glance.",
 
-      pageLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
+      pageLink: "https://github.com/SuhudAlyeqeenDotGithub/Al-Yeqeen-Task-Tracker-App",
       gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/Al-Yeqeen-Task-Tracker-App",
       techStack: (
         <div className="flex flex-wrap gap-5 justify-center items-center">
@@ -90,7 +90,7 @@ const Projects = () => {
       description:
         "Uplift is a personalized affirmation app that generates AI-powered motivation tailored to users’ values, goals, and preferences, with customizable reminders and privacy-focused features.",
       imageSrc: "/portfolioimage.png",
-      pageLink: "https://suhud-ayodeji-yekini-portfolio.vercel.app/",
+      pageLink: "https://github.com/SuhudAlyeqeenDotGithub/Alyeqeen-Uplift-FrontEnd",
       gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/Alyeqeen-Uplift-FrontEnd",
       techStack: (
         <div className="flex flex-wrap gap-5 justify-center items-center">
