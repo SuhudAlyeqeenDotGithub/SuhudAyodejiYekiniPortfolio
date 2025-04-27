@@ -40,7 +40,7 @@ const Projects = () => {
           <GitIcon />
         </div>
       ),
-      compStatus: "90%"
+      compStatus: "100%"
     },
 
     {
@@ -84,31 +84,7 @@ const Projects = () => {
         </div>
       ),
       compStatus: "100%" // Adjust the completion status accordingly
-    }
-  ];
-
-  const upcomingProjectsDetails = [
-    {
-      title: "Al-Yeqeen SmartTasks",
-      description:
-        "An AI-powered task management app that transforms natural language project descriptions into structured tasks, automating planning and boosting productivity with AI insights, collaboration tools, and gamification.",
-      imageSrc: "/alyeqeentasktrackerimage.png",
-      pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/",
-      gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
-      techStack: (
-        <div className="flex flex-wrap gap-5 justify-center items-center">
-          <JavascriptIcon />
-          <TypeScriptIcon />
-          <VercelIcon />
-          <OpenAIIcon />
-          <ReactIcon />
-          <NextJsIcon />
-          <TailwindIcon />
-        </div>
-      ),
-      compStatus: "20%"
     },
-
     {
       title: "Al-Yeqeen Uplift",
       description:
@@ -126,6 +102,29 @@ const Projects = () => {
           <MongoDbIcon />
           <MongooseIcon />
           <VercelIcon />
+          <ReactIcon />
+          <NextJsIcon />
+          <TailwindIcon />
+        </div>
+      ),
+      compStatus: "40%"
+    }
+  ];
+
+  const upcomingProjectsDetails = [
+    {
+      title: "Al-Yeqeen SmartTasks",
+      description:
+        "An AI-powered task management app that transforms natural language project descriptions into structured tasks, automating planning and boosting productivity with AI insights, collaboration tools, and gamification.",
+      imageSrc: "/alyeqeentasktrackerimage.png",
+      pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/",
+      gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
+      techStack: (
+        <div className="flex flex-wrap gap-5 justify-center items-center">
+          <JavascriptIcon />
+          <TypeScriptIcon />
+          <VercelIcon />
+          <OpenAIIcon />
           <ReactIcon />
           <NextJsIcon />
           <TailwindIcon />
