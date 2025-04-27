@@ -47,7 +47,7 @@ const Projects = () => {
       title: "Al-Yeqeen Portfolio",
       description:
         "A personal portfolio showcasing my professional experience, education, and projects, highlighting my skills and achievements, while boosting online engagement by 90%",
-      pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/",
+      pageLink: "https://suhud-ayodeji-yekini-portfolio.vercel.app/",
       gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
       techStack: (
         <div className="flex flex-wrap gap-5 justify-center items-center">
@@ -69,7 +69,7 @@ const Projects = () => {
       description:
         "Al-Yeqeen Bot is an intelligent assistant that helps users quickly find information about me. It offers customizable features like language preferences, theme colors, and chat visibility, making the website 95% easier to explore.",
       imageSrc: "/alyqeen-bot-image.png", // Replace with actual bot image
-      pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/", // Same portfolio link, or you can provide a separate one if needed
+      pageLink: "https://suhud-ayodeji-yekini-portfolio.vercel.app/", // Same portfolio link, or you can provide a separate one if needed
       gitHubLink:
         "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio/tree/master/src/components/Al_Yeqeen_Bot_Assistant", // Provide the GitHub link for the bot’s repository
       techStack: (
@@ -90,8 +90,8 @@ const Projects = () => {
       description:
         "Uplift is a personalized affirmation app that generates AI-powered motivation tailored to users’ values, goals, and preferences, with customizable reminders and privacy-focused features.",
       imageSrc: "/portfolioimage.png",
-      pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/",
-      gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
+      pageLink: "https://suhud-ayodeji-yekini-portfolio.vercel.app/",
+      gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/Alyeqeen-Uplift-FrontEnd",
       techStack: (
         <div className="flex flex-wrap gap-5 justify-center items-center">
           <OpenAIIcon />
@@ -117,7 +117,7 @@ const Projects = () => {
       description:
         "An AI-powered task management app that transforms natural language project descriptions into structured tasks, automating planning and boosting productivity with AI insights, collaboration tools, and gamification.",
       imageSrc: "/alyeqeentasktrackerimage.png",
-      pageLink: "https://suhud-ayodeji-yekini-portfolio-gsax.vercel.app/",
+      pageLink: "https://suhud-ayodeji-yekini-portfolio.vercel.app/",
       gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
       techStack: (
         <div className="flex flex-wrap gap-5 justify-center items-center">
