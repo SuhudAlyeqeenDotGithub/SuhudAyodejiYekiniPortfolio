@@ -21,6 +21,29 @@ import {
 const Projects = () => {
   const projectsDetails = [
     {
+      title: "Al-Yeqeen Uplift",
+      description:
+        "Uplift is a personalized affirmation app that generates AI-powered motivation tailored to users’ values, goals, and preferences, with customizable reminders and privacy-focused features.",
+      imageSrc: "/portfolioimage.png",
+      pageLink: "https://github.com/SuhudAlyeqeenDotGithub/Alyeqeen-Uplift-FrontEnd",
+      gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/Alyeqeen-Uplift-FrontEnd",
+      techStack: (
+        <div className="flex flex-wrap gap-5 justify-center items-center">
+          <OpenAIIcon />
+          <JavascriptIcon />
+          <TypeScriptIcon />
+          <NodeJsIcon /> <ExpressIcon />
+          <MongoDbIcon />
+          <MongooseIcon />
+          <VercelIcon />
+          <ReactIcon />
+          <NextJsIcon />
+          <TailwindIcon />
+        </div>
+      ),
+      compStatus: "80%"
+    },
+    {
       title: "Al-Yeqeen Task Tracker",
       description:
         "A task management app that provides a comprehensive and intuitive interface, allowing users to efficiently organize and track their workflow by offering a clear breakdown of tasks, including completed, in-progress, and terminated tasks, all at a glance.",
@@ -84,30 +107,6 @@ const Projects = () => {
         </div>
       ),
       compStatus: "100%" // Adjust the completion status accordingly
-    },
-    {
-      title: "Al-Yeqeen Uplift",
-      description:
-        "Uplift is a personalized affirmation app that generates AI-powered motivation tailored to users’ values, goals, and preferences, with customizable reminders and privacy-focused features.",
-      imageSrc: "/portfolioimage.png",
-      pageLink: "https://github.com/SuhudAlyeqeenDotGithub/Alyeqeen-Uplift-FrontEnd",
-      gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/Alyeqeen-Uplift-FrontEnd",
-      techStack: (
-        <div className="flex flex-wrap gap-5 justify-center items-center">
-          <OpenAIIcon />
-          <JavascriptIcon />
-          <PostgreSQLIcon />
-          <TypeScriptIcon />
-          <NodeJsIcon /> <ExpressIcon />
-          <MongoDbIcon />
-          <MongooseIcon />
-          <VercelIcon />
-          <ReactIcon />
-          <NextJsIcon />
-          <TailwindIcon />
-        </div>
-      ),
-      compStatus: "40%"
     }
   ];
 

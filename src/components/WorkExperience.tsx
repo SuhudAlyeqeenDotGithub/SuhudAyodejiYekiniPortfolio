@@ -21,6 +21,12 @@ const HomeSection3 = () => {
   const softwareProjects = (
     <ul className="list-disc list-inside flex flex-col gap-5">
       <li>
+        Developed a full-stack affirmation app using Next.js, TypeScript, Express, and Mongoose. Implemented secure
+        traditional and third-party authentication. Users can define core values, receive AI-generated or custom
+        affirmations, and schedule notifications—encouraging daily positivity based on personal goals. Mobile version in
+        progress.
+      </li>
+      <li>
         Engineered a full-stack web app, {taskTracker}, integrating secure authentication, data protection, and a
         responsive task management interface with real-time insights from the dashboard, leveraging React.js, Node.js,
         Express.js, MongoDB, Redux etc., to ensure scalability, efficiency, and a seamless user experience.
@@ -72,8 +78,8 @@ const HomeSection3 = () => {
             <ul className="list-disc list-inside flex flex-col gap-5">
               <li>
                 <b>Development:</b> JavaScript, Node.js, React.js, Next.js, TypeScript, Express.js, HTML, CSS, Redux,
-                Git, Tailwind CSS, AppScript, SQL, NoSQL, MongoDB, Mongoose, Axios, Java, Python, Tkinter, JWT(Json Web
-                Token) Authentication.
+                Git, Tailwind CSS, AppScript, SQL, NoSQL, MongoDB, Mongoose, Firebase, AI Integration for Bots and
+                automations.
               </li>
               <li>
                 <b>Techniques:</b> Data Structure & Algorithm, Object Oriented Programming, CRUD, MERN, Bcrypt,
