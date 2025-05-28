@@ -14,8 +14,7 @@ import {
   GitIcon,
   JavascriptIcon,
   OpenAIIcon,
-  VercelIcon,
-  PostgreSQLIcon
+  VercelIcon
 } from "./TechIcon";
 
 const Projects = () => {
