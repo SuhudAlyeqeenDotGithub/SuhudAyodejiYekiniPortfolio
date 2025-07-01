@@ -21,6 +21,12 @@ const HomeSection3 = () => {
   const softwareProjects = (
     <ul className="list-disc list-inside flex flex-col gap-5">
       <li>
+        Engineered a complex full-stack School Management System with Next.js, TypeScript, Redux, Express, and MongoDB
+        and many other tools. The app streamlines student, staff, finance, and academic management for schools, offering
+        a secure centralised, role-based platform which significantly promotes efficiency and data accuracy across
+        academic years.
+      </li>
+      <li>
         Developed a full-stack affirmation app using Next.js, TypeScript, Express, and Mongoose. Implemented secure
         traditional and third-party authentication. Users can define core values, receive AI-generated or custom
         affirmations, and schedule notifications—encouraging daily positivity based on personal goals. Mobile version in

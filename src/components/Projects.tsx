@@ -20,6 +20,27 @@ import {
 const Projects = () => {
   const projectsDetails = [
     {
+      title: "Al-Yeqeen School Management System",
+      description:
+        "Streamlines student, staff, finance, and academic management for schools, offering a secure centralised, role-based platform which significantly promotes efficiency and data accuracy across academic years.",
+      imageSrc: "/portfolioimage.png",
+      pageLink: "https://github.com/SuhudAlyeqeenDotGithub/Backend-School-Management-System",
+      gitHubLink: "https://github.com/SuhudAlyeqeenDotGithub/FrontEnd-School-Management-System",
+      techStack: (
+        <div className="flex flex-wrap gap-5 justify-center items-center">
+          <JavascriptIcon />
+          <TypeScriptIcon />
+          <NodeJsIcon /> <ExpressIcon />
+          <MongoDbIcon />
+          <MongooseIcon />
+          <ReactIcon />
+          <NextJsIcon />
+          <TailwindIcon />
+        </div>
+      ),
+      compStatus: "80%"
+    },
+    {
       title: "Al-Yeqeen Uplift",
       description:
         "Uplift is a personalized affirmation app that generates AI-powered motivation tailored to users’ values, goals, and preferences, with customizable reminders and privacy-focused features.",
@@ -41,6 +62,27 @@ const Projects = () => {
         </div>
       ),
       compStatus: "80%"
+    },
+    {
+      title: "Al-Yeqeen Bot",
+      description:
+        "Al-Yeqeen Bot is an intelligent assistant that helps users quickly find information about me. It offers customizable features like language preferences, theme colors, and chat visibility, making the website 95% easier to explore.",
+      imageSrc: "/alyqeen-bot-image.png", // Replace with actual bot image
+      pageLink: "https://suhud-ayodeji-yekini-portfolio.vercel.app/", // Same portfolio link, or you can provide a separate one if needed
+      gitHubLink:
+        "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio/tree/master/src/components/Al_Yeqeen_Bot_Assistant", // Provide the GitHub link for the bot’s repository
+      techStack: (
+        <div className="flex flex-wrap gap-5 justify-center items-center">
+          <JavascriptIcon />
+          <TypeScriptIcon />
+          <VercelIcon />
+          <OpenAIIcon />
+          <ReactIcon />
+          <NextJsIcon />
+          <TailwindIcon />
+        </div>
+      ),
+      compStatus: "100%" // Adjust the completion status accordingly
     },
     {
       title: "Al-Yeqeen Task Tracker",
@@ -85,27 +127,6 @@ const Projects = () => {
         </div>
       ),
       compStatus: "100%"
-    },
-    {
-      title: "Al-Yeqeen Bot",
-      description:
-        "Al-Yeqeen Bot is an intelligent assistant that helps users quickly find information about me. It offers customizable features like language preferences, theme colors, and chat visibility, making the website 95% easier to explore.",
-      imageSrc: "/alyqeen-bot-image.png", // Replace with actual bot image
-      pageLink: "https://suhud-ayodeji-yekini-portfolio.vercel.app/", // Same portfolio link, or you can provide a separate one if needed
-      gitHubLink:
-        "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio/tree/master/src/components/Al_Yeqeen_Bot_Assistant", // Provide the GitHub link for the bot’s repository
-      techStack: (
-        <div className="flex flex-wrap gap-5 justify-center items-center">
-          <JavascriptIcon />
-          <TypeScriptIcon />
-          <VercelIcon />
-          <OpenAIIcon />
-          <ReactIcon />
-          <NextJsIcon />
-          <TailwindIcon />
-        </div>
-      ),
-      compStatus: "100%" // Adjust the completion status accordingly
     }
   ];
 
