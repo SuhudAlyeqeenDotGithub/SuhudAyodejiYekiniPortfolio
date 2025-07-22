@@ -83,17 +83,19 @@ const HomeSection3 = () => {
             </h1>
             <ul className="list-disc list-inside flex flex-col gap-5">
               <li>
-                <b>Development:</b> JavaScript, Node.js, React.js, Next.js, TypeScript, Express.js, HTML, CSS, Redux,
-                Git, Tailwind CSS, AppScript, SQL, NoSQL, MongoDB, Mongoose, Firebase, AI Integration for Bots and
-                automations.
+                <b>Languages & Dev tools:</b> JavaScript, Node.js, React.js, Next.js, TypeScript, Express.js, HTML, CSS,
+                Tailwind CSS
               </li>
               <li>
-                <b>Techniques:</b> Data Structure & Algorithm, Object Oriented Programming, CRUD, MERN, Bcrypt,
-                Microsoft Excel, VBA.
+                <b>Databases:</b> SQL, NoSQL, MongoDB, Mongoose, Firestore
               </li>
               <li>
-                <b>Others:</b> UI/UX, Responsive Design, Trello, Figma, Lucid Charts, Canva, Google Sheets, Microsoft
-                Access.
+                <b>Tools & Platforms:</b> Redux, Tanstack (React Query), Google AppScript, Microsoft VBA, Socket.IO,
+                REST API, Firebase Auth, Google Cloud Storage, Git
+              </li>
+              <li>
+                <b>Other:</b> Realtime Apps, AI Bots integration, Data Structures & Algorithms, Systems Design, Object
+                Oriented Programming, Vercel Deployment, UI/UX.
               </li>
             </ul>
           </div>
