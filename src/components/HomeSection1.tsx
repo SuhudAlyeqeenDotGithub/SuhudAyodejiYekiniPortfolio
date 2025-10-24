@@ -7,50 +7,14 @@ function HomeSection1() {
       <Header />
       <div className="flex flex-col md:m-5 md:flex-row justify-center gap-5">
         {/* right section */}
-        <div className="flex flex-col gap-2 w-full justify-center items-center lg:items-start px-4 py-10 md:py-20">
-          <div className="px-5">
-            <p className="text-amber-400 md:text-[50px] text-[30px] font-bold">Hi I&apos;m</p>
-            <p className="md:text-[90px] text-[60px] font-khula"> Suhud Ayodeji</p>
-            <p className="md:text-[90px] text-[60px] font-khula">Yekini</p>
-            <p className="md:text-[20px] text-[15px]">
-              {" "}
-              Data System Developer || Data Analyst || Aspiring Full Stack Developer
-            </p>
-          </div>
-
-          <div className="flex flex-wrap md:flex-nowrap gap-5 mt-10 items-center justify-center w-full">
-            <button
-              type="button"
-              title="Projects"
-              className="cursor-pointer border- bg-amber-600 p-4 text-[18px] whitespace-nowrap w-full rounded-md transform duration-200 hover:scale-105 font-bold"
-              onClick={() => {
-                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              See my Projects
-            </button>
-            <button
-              type="button"
-              title="Experience"
-              className="cursor-pointer p-4 text-[18px] w-full bg-white text-darkBlue2 whitespace-nowrap rounded-md transform duration-200 hover:scale-105 font-bold"
-              onClick={() => {
-                document.getElementById("workexperience")?.scrollIntoView({ behavior: "smooth" });
-              }}
-            >
-              Work Experience
-            </button>
-          </div>
-        </div>
-
-        {/* left div */}
-        <div className="flex flex-col gap-10 w-full items-center justify-center">
-          <div className="md:w-[360px] lg:[500px] w-[200px] w-hidden">
+        <div className="flex flex-col gap-10 items-center justify-center">
+          <div className="md:w-[660px] lg:[750px] w-[500px] w-hidden">
             <Image
               src="/alyeqeenImage.png"
               alt="Suhud Image"
-              width={600}
+              width={1000}
               height={0}
-              className=" bottom-6 rounded-b-full w-full saturate-99 contrast-95 brightness-100"
+              className=" bottom-6 rounded-b-full w-full"
             />
           </div>
           {/* <div className="flex flex-col items-center justify-center md:w-1/2">
@@ -88,6 +52,42 @@ function HomeSection1() {
               </a>
             </div> */}
           {/* </div> */}
+        </div>
+
+        {/* left div */}
+        <div className="flex flex-col gap-2 w-full justify-center items-center lg:items-start px-4 py-10 md:py-20">
+          <div className="px-5">
+            <p className="text-amber-400 md:text-[50px] text-[30px] font-bold">Hi I&apos;m</p>
+            <p className="md:text-[90px] text-[60px] font-khula"> Suhud Ayodeji</p>
+            <p className="md:text-[90px] text-[60px] font-khula">Yekini</p>
+            <p className="md:text-[20px] text-[15px]">
+              {" "}
+              Data System Developer || Data Analyst || Aspiring Full Stack Developer
+            </p>
+          </div>
+
+          <div className="flex flex-wrap md:flex-nowrap gap-5 mt-10 items-center justify-center w-full">
+            <button
+              type="button"
+              title="Projects"
+              className="cursor-pointer border- bg-amber-600 p-4 text-[18px] whitespace-nowrap w-full rounded-md transform duration-200 hover:scale-105 font-bold"
+              onClick={() => {
+                document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              See my Projects
+            </button>
+            <button
+              type="button"
+              title="Experience"
+              className="cursor-pointer p-4 text-[18px] w-full bg-white text-darkBlue2 whitespace-nowrap rounded-md transform duration-200 hover:scale-105 font-bold"
+              onClick={() => {
+                document.getElementById("workexperience")?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Work Experience
+            </button>
+          </div>
         </div>
       </div>
     </div>

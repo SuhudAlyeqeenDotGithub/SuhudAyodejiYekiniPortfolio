@@ -43,7 +43,7 @@ Started with advanced spreadsheets for data analysis, then explored web design w
 Skills:
 Languages & Dev tools: JavaScript, Node.js, React.js, Next.js, TypeScript, Express.js, HTML, CSS, Tailwind CSS
 Databases: SQL, NoSQL, MongoDB, Mongoose, Firestore
-Tools & Platforms: Redux, Tanstack (React Query), Socket.IO, REST API, Firebase Auth, Google Cloud Storage, Git, Google app script
+Tools & Platforms: Redux, Tanstack (React Query), Socket.IO, REST API, Firebase Auth, Google Cloud Storage, Git, Google app script 
 Other: Realtime Apps, AI Bots integration, Data Structures & Algorithms, Systems Design, Object Oriented Programming,
 Vercel Deployment.
 

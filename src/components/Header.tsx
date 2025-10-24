@@ -30,7 +30,7 @@ function Header() {
   return (
     <div className="flex flex-col sm:flex-wrap items-center justify-between md:py-8 pt-5 gap-y-5">
       <div className="flex-shrink-0 g-yellow-500 hidden sm:block">
-        <Image src="/alyeqeenLogo.png" alt="Al-Yeqeen Logo" width={200} height={200} className="object-cover" />
+        <Image src="/alyeqeenLogo.png" alt="Al-Yeqeen Logo" width={150} height={100} className="object-cover" />
       </div>
       <nav className="flex items-center justify-center gap-5">
         {/* <ul className="flex flex-wrap md:flex-nowrap gap-5">
