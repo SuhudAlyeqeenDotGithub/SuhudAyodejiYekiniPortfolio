@@ -2,7 +2,6 @@
 import AIAssistant from "@/Al_Yeqeen_Bot_Assistant/AIAssistant";
 import { useState, useEffect } from "react";
 import {
-  Github,
   Mail,
   ExternalLink,
   Moon,
@@ -718,7 +717,7 @@ export default function Portfolio() {
             <h2 className="text-3xl sm:text-4xl font-bold text-center">Get In Touch</h2>
           </div>
           <p className="text-center text-gray-600 dark:text-gray-400 mb-12">
-            Let's collaborate and build something amazing together
+            Let&apos;s collaborate and build something amazing together
           </p>
 
           <div className="grid md:grid-cols-2 gap-8">
