@@ -33,10 +33,15 @@ Google Drive Data Retrieval: Created an algorithm to automate file ownership ret
 CMS Integration: Managed content in the company’s CMS, improving collaboration by 86%.
 
 About Me:
-I am an aspiring Full-Stack Software Engineer, passionate about developing impactful solutions and transforming ideas into reality. I specialize in software development, data analysis, and user-centered applications. Currently, I work as a Data Analyst at Principle Cleaning Services, enhancing decision-making with data-driven systems.
+I am an aspiring Full Stack Software Engineer passionate about turning ideas into meaningful digital experiences that solve real-world problems. With a background in data analysis, I've developed a strong foundation in problem-solving, attention to detail, and data-driven thinking — skills that now shape how I approach software design and development.
 
-My journey began with IT studies, followed by self-driven learning in both frontend and backend technologies, and I am always exploring new technologies.
+I see coding as more than a technical skill — it's a creative outlet and a way to bring ideas to life. My goal is to build tools that don't just work but inspire progress and make everyday tasks simpler and smarter.
 
+Currently, I work as a Data Analyst at Principle Cleaning Services, driving the creation of systems that enhance decision-making and operational efficiency across multiple departments. Alongside this, I continue to sharpen my development skills, exploring technologies that bridge data, functionality, and user experience.
+
+Beyond technology, I'm deeply passionate about fitness and motivation — two disciplines that mirror my approach to coding: consistency, resilience, and growth. I believe in evolving through code, technology, fitness, and motivation — becoming stronger not just in skill, but in mindset and purpose.
+
+In everything I do, I aim to grow a little more each day — whether it's solving a coding challenge, learning a new framework, or pushing through one more rep in the gym.
 Development Journey:
 Started with advanced spreadsheets for data analysis, then explored web design with HTML/CSS through an e-commerce project. Built a foundation in Java and SQL, followed by integrating JavaScript and Google Apps Script in projects like the Al-Yeqeen Task Tracker. Gained experience with React.js, Node.js, and MongoDB, and improved state management with Redux. Currently exploring AI integration with OpenAI’s API. For more details, visit the Development Journey section in the portfolio.
 
