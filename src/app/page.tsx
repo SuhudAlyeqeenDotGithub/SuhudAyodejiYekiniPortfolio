@@ -192,7 +192,7 @@ export default function Portfolio() {
       tech: ["Next.js", "OpenAI", "TypeScript", "AI Integration"],
       github: "https://github.com/SuhudAlyeqeenDotGithub/SuhudAyodejiYekiniPortfolio",
       demo: "https://suhud-ayodeji-yekini-portfolio.vercel.app/",
-      image: "/alyeqeenbotimage.png"
+      image: "/suhudbot.png"
     },
     {
       title: "Core Values App",
